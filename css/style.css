@@ -1,6 +1,7 @@
 body {
   font-size: 20px;
   font-family: "Goldman", cursive;
+  background-image: url(../images/background.jpg);
 }
 
 .font-test1 {
@@ -20,7 +21,7 @@ body {
 
 .header ul a {
   display: block;
-  padding: 20px;
+  padding: 10px;
   border-right: none;
   text-decoration: none;
   text-align: center;
@@ -34,7 +35,7 @@ body {
 }
 
 .header .menu-icon {
-  margin: 40px 5px;
+  margin: 30px 5px;
   padding: 15px;
   position: relative;
   float: right;
@@ -97,7 +98,7 @@ body {
 .header #logo {
   width: 180px;
   padding: 3%;
-  padding-top: 30px;
+  padding-top: 20px;
 }
 
 footer {
@@ -106,6 +107,7 @@ footer {
 
 .footer-social-icons ul img {
   width: 50px;
+  margin-top: 25px;
 }
 .footer-social-icons ul {
   display: flex;
