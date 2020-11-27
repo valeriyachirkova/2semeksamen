@@ -1,9 +1,10 @@
-#font-test1 {
-  font-family: "hardware requiem italic";
+body {
+  font-size: 20px;
+  font-family: "Goldman", cursive;
 }
 
-#font-test2 {
-  font-family: "Goldman", cursive;
+.font-test1 {
+  font-family: "hardware requiem italic";
 }
 
 .header {
@@ -23,15 +24,7 @@
   border-right: none;
   text-decoration: none;
   text-align: center;
-  border-bottom: 1px solid black;
-  font-size: 1.4em;
-  font-family: "druk wide bold";
-  -webkit-text-stroke: 1px black;
-}
-
-.header ul a:hover {
-  color: #9b9b9b;
-  transition: 0.6s;
+  font-size: 1.2em;
 }
 
 .header .menu {
@@ -41,7 +34,8 @@
 }
 
 .header .menu-icon {
-  padding: 45px 20px;
+  margin: 40px 5px;
+  padding: 15px;
   position: relative;
   float: right;
   cursor: pointer;
@@ -50,8 +44,8 @@
 .header .menu-icon .nav-icon {
   background: black;
   display: block;
-  height: 2px;
-  width: 30px;
+  height: 3px;
+  width: 35px;
   position: relative;
   transition: background 0.2s ease-out;
 }
@@ -64,7 +58,7 @@
   width: 100%;
   position: absolute;
   transition: all 0.2s ease-out;
-  top: 5px;
+  top: 8px;
 }
 
 .header .menu-icon .nav-icon:after {
@@ -75,7 +69,7 @@
   width: 100%;
   position: absolute;
   transition: all 0.2s ease-out;
-  top: -5px;
+  top: -8px;
 }
 
 .header .menu-btn {
@@ -102,7 +96,7 @@
 
 .header #logo {
   width: 180px;
-  padding: 1%;
+  padding: 3%;
   padding-top: 30px;
 }
 
@@ -122,3 +116,94 @@ footer {
 .footer-social-icons li {
   margin: 0 30px;
 }
+
+/* MEDIA START ---------------------------------------------------------------------*/
+@media only screen and (min-width: 600px) {
+  .header .menu-icon {
+    display: none;
+  }
+
+  .header .menu {
+    clear: none;
+    float: right;
+    max-height: none;
+  }
+  .header li {
+    float: left;
+    padding-top: 8%;
+  }
+  .header li a {
+    font-size: 0.55em;
+  }
+}
+
+@media only screen and (min-width: 700px) {
+}
+
+@media only screen and (min-width: 800px) {
+  .header ul a {
+    border-bottom: none;
+  }
+
+  .header li {
+    float: left;
+    padding-top: 6%;
+  }
+
+  .header #logo {
+    width: 180px;
+  }
+  .header li a {
+    font-size: 0.9em;
+  }
+}
+
+/*  mobil skift til desktop !!! */
+
+@media only screen and (min-width: 1000px) {
+  .header {
+    height: 115px;
+  }
+
+  .header #logo {
+    width: 275px;
+  }
+
+  .header li {
+    float: left;
+  }
+
+  .header li a {
+    font-size: 1.1em;
+  }
+
+  .header ul a {
+    border-bottom: none;
+  }
+
+  .header .menu {
+    clear: none;
+    float: right;
+    max-height: none;
+  }
+
+  .header .menu-icon {
+    display: none;
+  }
+
+  .header ul a {
+    border-bottom: none;
+  }
+
+  .header .menu {
+    clear: none;
+    float: right;
+    max-height: none;
+  }
+
+  .header .menu-icon {
+    display: none;
+  }
+}
+
+/* MEDIA SLUT ---------------------------------------------------------------------*/
