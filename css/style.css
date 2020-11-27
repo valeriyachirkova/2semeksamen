@@ -138,23 +138,22 @@ footer {
 }
 
 @media only screen and (min-width: 700px) {
+  .header li a {
+    font-size: 0.75em;
+  }
 }
 
-@media only screen and (min-width: 800px) {
+@media only screen and (min-width: 805px) {
   .header ul a {
     border-bottom: none;
   }
 
-  .header li {
-    float: left;
-    padding-top: 6%;
+  .header li a {
+    font-size: 0.9em;
   }
 
   .header #logo {
     width: 180px;
-  }
-  .header li a {
-    font-size: 0.9em;
   }
 }
 
