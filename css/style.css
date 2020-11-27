@@ -102,11 +102,10 @@ body {
 
 footer {
   padding: 10px 10px;
-  background-color: #000000;
 }
 
 .footer-social-icons ul img {
-  width: 45px;
+  width: 50px;
 }
 .footer-social-icons ul {
   display: flex;
