@@ -1,6 +1,7 @@
 body {
   font-size: 20px;
   font-family: "Goldman", cursive;
+
   background-image: url(../images/background.jpg);
 }
 
@@ -8,97 +9,43 @@ body {
   font-family: "hardware requiem italic";
 }
 
-.header {
-  position: relative;
-  width: 100%;
-  z-index: 3;
+#top-menu {
+  display: flex;
+  justify-content: space-between;
 }
 
-.header ul {
-  list-style: none;
-  overflow: hidden;
-}
-
-.header ul a {
-  display: block;
-  padding: 10px;
-  border-right: none;
-  text-decoration: none;
-  text-align: center;
-  font-size: 1.2em;
-}
-
-.header .menu {
-  clear: both;
-  max-height: 0;
-  transition: max-height 0.2s ease-out;
-}
-
-.header .menu-icon {
-  margin: 30px 5px;
-  padding: 15px;
-  position: relative;
-  float: right;
-  cursor: pointer;
-}
-
-.header .menu-icon .nav-icon {
-  background: black;
-  display: block;
-  height: 3px;
-  width: 35px;
-  position: relative;
-  transition: background 0.2s ease-out;
-}
-
-.header .menu-icon .nav-icon:before {
-  background: black;
-  content: "";
-  display: block;
-  height: 100%;
-  width: 100%;
-  position: absolute;
-  transition: all 0.2s ease-out;
-  top: 8px;
-}
-
-.header .menu-icon .nav-icon:after {
-  background: black;
-  content: "";
-  display: block;
-  height: 100%;
-  width: 100%;
-  position: absolute;
-  transition: all 0.2s ease-out;
-  top: -8px;
-}
-
-.header .menu-btn {
+#desktop-menu {
   display: none;
 }
 
-.header .menu-btn:checked ~ .menu {
-  max-height: 350px;
+#burger-icon {
+  width: 40px;
+  height: 40px;
+  background-color: black;
+  align-self: center;
+  margin-right: 10px;
 }
 
-.header .menu-btn:checked ~ .menu-icon .nav-icon {
-  background: transparent;
+#test-menu {
+  width: 100%;
+  text-align: center;
 }
 
-.header .menu-btn:checked ~ .menu-icon .nav-icon:before {
-  transform: rotate(-45deg);
-  top: 0;
+#test-menu li a {
+  display: block;
+  padding: 5px;
+  margin: 5px;
+
+  color: #db1f99;
 }
 
-.header .menu-btn:checked ~ .menu-icon .nav-icon:after {
-  transform: rotate(45deg);
-  top: 0;
+#test-menu li {
+  color: #db1f99;
 }
 
-.header #logo {
-  width: 180px;
-  padding: 3%;
-  padding-top: 20px;
+#logo {
+  width: 200px;
+  margin-left: 10px;
 }
 
 footer {
@@ -119,91 +66,48 @@ footer {
 }
 
 /* MEDIA START ---------------------------------------------------------------------*/
-@media only screen and (min-width: 600px) {
-  .header .menu-icon {
+@media only screen and (min-width: 700px) {
+  #burger-icon {
     display: none;
   }
+  #desktop-menu {
+    display: block;
+    display: flex;
+  }
 
-  .header .menu {
-    clear: none;
-    float: right;
-    max-height: none;
+  #desktop-menu li {
+    margin: 6px;
+    font-size: 0.6em;
+    padding: 5px;
+    margin-top: 20px;
+    font-weight: bold;
   }
-  .header li {
-    float: left;
-    padding-top: 8%;
-  }
-  .header li a {
-    font-size: 0.55em;
+
+  #desktop-menu li a {
+    color: #db1f99;
   }
 }
 
-@media only screen and (min-width: 700px) {
-  .header li a {
-    font-size: 0.75em;
-  }
+.menu-underline {
+  text-decoration: underline;
 }
 
-@media only screen and (min-width: 805px) {
-  .header ul a {
-    border-bottom: none;
+@media only screen and (min-width: 1024px) {
+  #desktop-menu li {
+    align-self: center;
+    background-color: #db1f99;
+    font-size: 0.8em;
+    width: 120px;
+    text-align: center;
+    border-radius: 4px;
+    box-shadow: 4px 4px;
   }
-
-  .header li a {
-    font-size: 0.9em;
-  }
-
-  .header #logo {
-    width: 180px;
+  #desktop-menu li a {
+    text-decoration: none;
+    color: white;
   }
 }
 
 /*  mobil skift til desktop !!! */
-
-@media only screen and (min-width: 1000px) {
-  .header {
-    height: 115px;
-  }
-
-  .header #logo {
-    width: 275px;
-  }
-
-  .header li {
-    float: left;
-  }
-
-  .header li a {
-    font-size: 1.1em;
-  }
-
-  .header ul a {
-    border-bottom: none;
-  }
-
-  .header .menu {
-    clear: none;
-    float: right;
-    max-height: none;
-  }
-
-  .header .menu-icon {
-    display: none;
-  }
-
-  .header ul a {
-    border-bottom: none;
-  }
-
-  .header .menu {
-    clear: none;
-    float: right;
-    max-height: none;
-  }
-
-  .header .menu-icon {
-    display: none;
-  }
-}
 
 /* MEDIA SLUT ---------------------------------------------------------------------*/

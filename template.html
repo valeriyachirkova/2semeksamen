@@ -23,54 +23,48 @@
   </head>
   <!--Header, skal bare kopieres ind i alle andre html dokumenter-->
   <header class="header">
-    <a href="index.html">
-      <img src="images/logosilver.png" alt="logo" id="logo" />
-    </a>
-    <input class="menu-btn" type="checkbox" id="menu-btn" />
-    <label class="menu-icon" for="menu-btn"
-      ><span class="nav-icon"></span
-    ></label>
-    <ul class="menu">
-      <li><a href="index.html">HOME</a></li>
+    <div id="top-menu">
+      <a href="index.html">
+        <img src="images/logosilver.png" alt="logo" id="logo" />
+      </a>
+      <div id="burger-icon"></div>
+      <ul id="desktop-menu">
+        <li>
+          <a href="shop.html"><span class="menu-underline">S</span>HOP</a>
+        </li>
+        <li>
+          <a href="gallery.html">
+            <span class="menu-underline">G</span>ALLERY</a
+          >
+        </li>
+        <li>
+          <a href="projects.html">
+            <span class="menu-underline">P</span>ROJECTS</a
+          >
+        </li>
+        <li>
+          <a href="production.html">
+            <span class="menu-underline">P</span>RODUCTION</a
+          >
+        </li>
+        <li>
+          <a href="about.html"> <span class="menu-underline">A</span>BOUT</a>
+        </li>
+      </ul>
+    </div>
+
+    <ul id="test-menu">
+      <li><a href="shop.html">SHOP</a></li>
       <li><a href="gallery.html">GALLERY</a></li>
-      <li><a href="products.html">PRODUCTS</a></li>
       <li><a href="projects.html">PROJECTS</a></li>
       <li><a href="production.html">PRODUCTION</a></li>
+      <li><a href="about.html">ABOUT</a></li>
     </ul>
   </header>
   <!--Header slut, skal bare kopieres ind i alle andre html dokumenter-->
   <main>
     <p class="font-test1">hej med dig min ven</p>
     <p class="font-test2">hej med dig min ven</p>
-    <p class="font-test1">hej med dig min ven</p>
-    <p class="font-test2">hej med dig min ven</p>
-    <p class="font-test1">hej med dig min ven</p>
-    <p class="font-test2">hej med dig min ven</p>
-    <p class="font-test1">hej med dig min ven</p>
-    <p class="font-test2">hej med dig min ven</p>
-    <p class="font-test1">hej med dig min ven</p>
-    <p class="font-test2">hej med dig min ven</p>
-    <p class="font-test1">hej med dig min ven</p>
-    <p class="font-test2">hej med dig min ven</p>
-    <p class="font-test1">hej med dig min ven</p>
-    <p class="font-test2">hej med dig min ven</p>
-    <p class="font-test1">hej med dig min ven</p>
-    <p class="font-test2">hej med dig min ven</p>
-    <p class="font-test1">hej med dig min ven</p>
-    <p class="font-test2">hej med dig min ven</p>
-    <p class="font-test1">hej med dig min ven</p>
-    <p class="font-test2">hej med dig min ven</p>
-    <p class="font-test2">hej med dig min ven</p>
-    <p class="font-test1">hej med dig min ven</p>
-    <p class="font-test2">hej med dig min ven</p>
-    <p class="font-test1">hej med dig min ven</p>
-    <p class="font-test2">hej med dig min ven</p>
-    <p class="font-test1">hej med dig min ven</p>
-    <p class="font-test2">hej med dig min ven</p>
-    <p class="font-test2">hej med dig min ven</p>
-    <p class="font-test1">hej med dig min ven</p>
-    <p class="font-test2">hej med dig min ven</p>
-    <p class="font-test1">hej med dig min ven</p>
   </main>
 
   <!--Footer, skal bare kopieres ind i alle andre html dokumenter-->
@@ -91,4 +85,7 @@
     </div>
   </footer>
   <!--Footer slut, skal bare kopieres ind i alle andre html dokumenter-->
+  <!-- load jQuery library -->
+  <script src="js/jquery-3.5.1.min.js"></script>
+  <script src="js/template.js"></script>
 </html>
