@@ -33,7 +33,7 @@
 
 #logo {
   width: 200px;
-  margin-left: 10px;
+  margin-left: 15px;
   margin-top: 5%;
 }
 
@@ -154,6 +154,10 @@ footer {
 
 /*  mobil skift til desktop !!! */
 @media only screen and (min-width: 1024px) {
+  #logo {
+    width: 400px;
+  }
+
   #desktop-menu {
     margin-top: 1px;
   }
