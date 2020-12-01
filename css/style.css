@@ -1,13 +1,22 @@
 body {
   font-size: 20px;
   font-family: "Goldman", cursive;
-
   background-image: url(../images/background.jpg);
 }
 
+img {
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Dette er et levn. kan bare fjernes
 .font-test1 {
   font-family: "hardware requiem italic";
 }
+*/
 
 #top-menu {
   display: flex;
@@ -103,7 +112,6 @@ footer {
     box-shadow: 4px 4px;
   }
   #desktop-menu li a {
-    text-decoration: none;
     color: white;
   }
 }
