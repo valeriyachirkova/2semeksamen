@@ -1,8 +1,197 @@
-@media only screen and (min-width: 500px) {
+#logo_play video {
+    display: none;
 }
 
-@media only screen and (min-width: 700px) {
+
+.bobble img {
+    position: absolute;
 }
+
+
+#bobble1 img {
+    width: 20%;
+    z-index: 1;
+    right: 100px;
+    top: 100px;
+}
+
+#bobble2 img {
+    width: 30%;
+    z-index: 1;
+    right: 30px;
+    top: 300px;
+}
+
+#bobble3 img {
+    width: 10%;
+    z-index: 0;
+    left: 20px;
+    top: 400px;
+}
+
+#bobble4 img {
+    width: 15%;
+    z-index: 1;
+    left: 50px;
+    top: 800px;
+}
+
+#bobble5 img {
+    width: 10%;
+    z-index: 1;
+    right: 3px;
+    top: 1000px;
+}
+
+
+#bobble6 img {
+    width: 20%;
+    z-index: 0;
+    left: 3px;
+    top: 1200px;
+}
+
+
+#bobble7 img {
+    width: 25%;
+    z-index: 0;
+    right: 3px;
+    top: 1300px;
+}
+
+#bobble8 img {
+    width: 10%;
+    z-index: 0;
+    right: 50px;
+    top: 800px;
+}
+
+#bobble9 img {
+    width: 15%;
+    z-index: 1;
+    left: 30px;
+    top: 1400px;
+}
+
+
+.img_product img {
+    width: 80%;
+    border: 3px solid lightblue;
+    display: block;
+    margin: 0 auto;
+}
+
+
+#text_section {
+    margin-top: 8%;
+    margin-bottom: 8%;
+}
+
+#text_section p {
+    font-size: 0.7em;
+    text-align: center;
+}
+
+
+#instafeed {
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+
+
+@media only screen and (min-width: 500px) {
+
+
+    #bobble1 img {
+        width: 15%;
+        right: 80px;
+        top: 40px;
+    }
+
+    #bobble2 img {
+        width: 25%;
+        right: 50px;
+        top: 70px;
+    }
+
+    #bobble3 img {
+        width: 10%;
+        left: 100px;
+        top: 100px;
+    }
+
+    #bobble4 img {
+        width: 15%;
+        left: 50px;
+        top: 200px;
+    }
+
+    #bobble5 img {
+        width: 10%;
+        right: 3px;
+        top: 300px;
+    }
+
+
+    #bobble6 img {
+        width: 20%;
+        left: 3px;
+        top: 500px;
+    }
+
+
+    #bobble7 img {
+        width: 25%;
+        right: 200px;
+        top: 700px;
+    }
+
+    #bobble8 img {
+        width: 10%;
+        right: 50px;
+        top: 800px;
+    }
+
+    #bobble9 img {
+        width: 15%;
+        left: 400px;
+        top: 800px;
+    }
+
+
+    .img_product img:hover {
+        opacity: 50%;
+
+    }
+
+    #flex_product {
+        display: flex;
+        justify-content: center;
+    }
+
+
+    #text_section {
+        margin-top: 8%;
+        margin-bottom: 8%;
+    }
+
+    #text_section p {
+        font-size: 1em;
+      
+    }
+}
+
+@media only screen and (min-width: 700px) {}
+
+
+
+
 /*  mobil skift til desktop !!! */
 @media only screen and (min-width: 1024px) {
+    #logo_play video {
+        display: block;
+        margin: 0 auto;
+        margin-bottom: 2%;
+    }
 }
