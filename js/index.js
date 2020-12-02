@@ -2,7 +2,7 @@
  * file: js.js
  * purpose: interactivity
  **/
-console.log("JavaScript from js/js.js: up and running!");
+console.log("JavaScript from index.js");
 
 // Tjek at DOM er indlæst
 $(document).ready(function () {
@@ -10,7 +10,7 @@ $(document).ready(function () {
   $("#test-menu").hide();
 
   $("#burger-icon").click(function () {
-    $("#test-menu").toggle();
+    $("#test-menu").toggle().css('z-index','-1');
   });
 
   // ... end ...
