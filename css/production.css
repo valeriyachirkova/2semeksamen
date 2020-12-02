@@ -1,8 +1,59 @@
-@media only screen and (min-width: 500px) {
+#infographic-desktop {
+    display: none;
 }
 
-@media only screen and (min-width: 700px) {
+#infographic-mobile {
+    margin: 0 auto;
+    width: 80%;
+    text-align: center;
 }
+
+#flextext {
+    font-family: "0Arame";
+    font-size: 0.8em;
+    color: black;
+}
+
+@media only screen and (min-width: 500px) {}
+
+@media only screen and (min-width: 700px) {
+    #flexbox1 {
+        display: flex;
+        margin-bottom: 60px;
+    }
+    
+    #flex1 {
+        width: 45%;
+    }
+    
+    #flex2 {
+        width: 45%;
+    }
+    
+    #flexbox2 {
+        display: flex;
+    }
+    
+    #flex3 {
+        width: 45%;
+    }
+    
+    #flex4 {
+        width: 45%;
+    }
+}
+
+
 /*  mobil skift til desktop !!! */
 @media only screen and (min-width: 1024px) {
+    #infographic-mobile {
+        display: none;
+    }
+
+    #infographic-desktop {
+        display: block;
+        width: 90%;
+        text-align: center;
+        margin: 0 auto;
+    }
 }
