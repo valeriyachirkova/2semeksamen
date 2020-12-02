@@ -21,11 +21,7 @@ $(document).ready(function () {
             $(video).mouseout(function() {
                 video.pause();
             });
-    
-    
-    
-    
-    
+
 
   // ... end ...
 });
