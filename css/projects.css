@@ -37,6 +37,74 @@ h2 {
   width: 95%;
 }
 
+/*parallax bobler*/
+.bobble img {
+  position: absolute;
+}
+
+#bobble1 img {
+  width: 20%;
+  z-index: 1;
+  right: 100px;
+  top: 800px;
+}
+
+#bobble2 img {
+  width: 30%;
+  z-index: 1;
+  right: 30px;
+  top: 1100px;
+}
+
+#bobble3 img {
+  width: 10%;
+  z-index: 0;
+  left: 20px;
+  top: 1000px;
+}
+
+#bobble4 img {
+  width: 15%;
+  z-index: 1;
+  left: 50px;
+  top: 1100px;
+}
+
+#bobble5 img {
+  width: 10%;
+  z-index: 1;
+  right: 3px;
+  top: 1200px;
+}
+
+#bobble6 img {
+  width: 20%;
+  z-index: 0;
+  left: 3px;
+  top: 1100px;
+}
+
+#bobble7 img {
+  width: 25%;
+  z-index: 0;
+  right: 3px;
+  top: 1500px;
+}
+
+#bobble8 img {
+  width: 10%;
+  z-index: 0;
+  right: 50px;
+  top: 1700px;
+}
+
+#bobble9 img {
+  width: 15%;
+  z-index: 1;
+  left: 30px;
+  top: 1800px;
+}
+
 .photos {
   display: block;
   margin-left: auto;
@@ -58,6 +126,53 @@ h2 {
     max-width: 550px;
     margin: 0 auto;
   }
+
+  /*parallax bobler*/
+  #bobble1 img {
+    width: 15%;
+    right: 80px;
+  }
+
+  #bobble2 img {
+    width: 25%;
+    right: 50px;
+  }
+
+  #bobble3 img {
+    width: 10%;
+    left: 100px;
+  }
+
+  #bobble4 img {
+    width: 15%;
+    left: 50px;
+  }
+
+  #bobble5 img {
+    width: 10%;
+    right: 3px;
+  }
+
+  #bobble6 img {
+    width: 20%;
+    left: 3px;
+  }
+
+  #bobble7 img {
+    width: 25%;
+    right: 200px;
+  }
+
+  #bobble8 img {
+    width: 10%;
+    right: 50px;
+    top: 800px;
+  }
+
+  #bobble9 img {
+    width: 15%;
+    left: 400px;
+  }
   .photos {
     width: 30%;
   }
@@ -76,6 +191,52 @@ h2 {
   #media2 {
     max-width: 950px;
     margin: 0 auto;
+  }
+
+  /*parallax bobler*/
+  #bobble1 img {
+    width: 10%;
+    right: 120px;
+  }
+
+  #bobble2 img {
+    width: 15%;
+    right: 200px;
+  }
+
+  #bobble3 img {
+    width: 5%;
+    left: 100px;
+  }
+
+  #bobble4 img {
+    width: 10%;
+    left: 150px;
+  }
+
+  #bobble5 img {
+    width: 10%;
+    right: 500px;
+  }
+
+  #bobble6 img {
+    width: 15%;
+    left: 150px;
+  }
+
+  #bobble7 img {
+    width: 15%;
+    right: 300px;
+  }
+
+  #bobble8 img {
+    width: 10%;
+    right: 50px;
+  }
+
+  #bobble9 img {
+    width: 10%;
+    left: 400px;
   }
 
   .photos {
