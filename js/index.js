@@ -6,22 +6,36 @@ console.log("JavaScript from js/js.js: up and running!");
 
 // Tjek at DOM er indlæst
 $(document).ready(function () {
-  // ... your code here ...
-
-    
-    
-      var video = document.getElementById("logo_spin");
+    // ... your code here ...
 
 
-            $(video).mouseover(function() {
-                video.play();
 
-            });
-
-            $(video).mouseout(function() {
-                video.pause();
-            });
+    var video = document.getElementById("logo_spin");
 
 
-  // ... end ...
+    $(video).mouseover(function () {
+        video.play();
+
+    });
+
+    $(video).mouseout(function () {
+        video.pause();
+    });
+
+
+
+    $(video).click(function () {
+        if (video.paused){
+            video.play();
+        }
+        
+        else{
+            video.pause();
+        }
+        
+
+    });
+
+  
+    // ... end ...
 });
