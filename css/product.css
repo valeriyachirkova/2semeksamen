@@ -26,18 +26,18 @@ h2 {
     width: 80%;
     margin: 0 auto ;
     justify-content: center;
-    font-size: 0.6em;
 }
 
 #choose_pic p {
     padding: 3px;
-    margin: auto 2%;
+    margin: auto 8px;
     background-color: #db1f99;
     border-radius: 4px;
     box-shadow: 2px 2px #000;
     color: #fff;
-    width: 12%;
+    width: 15%;
     text-align: center;
+    font-size: 0.8em;
 }
 
 #choose_pic p:hover {
@@ -138,5 +138,9 @@ h2 {
 @media only screen and (min-width: 1024px) {
     #product_info {
         margin-left: 4em;
+    }
+    
+    #choose_pic p {
+        font-size: 1em;
     }
 }

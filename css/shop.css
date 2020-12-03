@@ -1,8 +1,94 @@
-@media only screen and (min-width: 500px) {
+
+h2 {
+    margin-bottom: 0;
 }
 
-@media only screen and (min-width: 700px) {
+.product-and-info {
+    margin: 3em auto;
+    max-width: 400px;
 }
+
+.product_showcase {
+    position: relative;
+    text-align: center;
+}
+
+.product_pic {
+    width: 80%;
+    position: absolute;
+    left: 11%;
+    z-index: -5;
+    top: 5%;
+}
+
+.tv_frame {
+    width: 90%;
+    position: relative;
+}
+
+.see-more-text {
+    position: absolute;
+    width: 85%;
+    z-index: 5;
+    background-color: rgba(219, 31, 153, 0.5);
+    color: #fff;
+    left: 8%;
+    top: 37%;
+    padding: 20px;
+    box-sizing: border-box;
+    z-index: -10;
+}
+
+.number-and-price {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10%;
+    font-size: 1.2em;
+}
+
+.price {
+    color: #05D48A;
+    font-weight: bold;
+    -webkit-text-stroke: 0.5px black;
+    text-shadow: 1px 1px black;
+}
+
+#icon-series {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.icon-and-text {
+    width: 35%;
+    max-width: 100px;
+    margin: 20px;
+    font-size: 0.8em;
+    text-align: center;
+}
+
+
+@media only screen and (min-width: 700px) {
+    .product-flex {
+        display: flex;
+        justify-content: space-around;
+    }
+}
+
+
 /*  mobil skift til desktop !!! */
 @media only screen and (min-width: 1024px) {
+    h2 {
+        font-size: 1.4em;
+    }
+    
+    .product-and-info {
+        
+    max-width: 500px;
+    }
+    
+    .icon-and-text {
+        font-size: 0.7em;
+        max-width: 120px;
+    }
 }

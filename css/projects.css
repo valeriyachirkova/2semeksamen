@@ -21,6 +21,7 @@ h2 {
   text-align: center;
   position: relative;
   margin-bottom: 5%;
+    cursor: pointer;
 }
 
 #video {
@@ -31,6 +32,13 @@ h2 {
   z-index: -10;
   top: 4%;
   left: 8%;
+}
+
+#play-button {
+    width: 100px;
+    position: absolute;
+    top: 37%;
+    left: 40%;
 }
 
 #tv-ramme {

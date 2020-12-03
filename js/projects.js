@@ -13,8 +13,10 @@ $(document).ready(function () {
     $("#media1").click(function () {
         if (video.paused) {
             video.play();
+            $("#play-button").hide();
         } else {
             video.pause();
+            $("#play-button").show();
         }
     });
     // ... end ...
