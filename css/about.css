@@ -1,8 +1,41 @@
-@media only screen and (min-width: 500px) {
+#picture_2 {
+  display: none;
 }
 
-@media only screen and (min-width: 700px) {
+#flex-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 5%;
 }
-/*  mobil skift til desktop !!! */
-@media only screen and (min-width: 1024px) {
+
+#picture_1 {
+  width: 90%;
+}
+
+#text {
+  margin: 0 auto;
+  width: 90%;
+}
+#xoxo {
+  margin: 0 auto;
+  width: 50%;
+}
+
+@media only screen and (min-width: 600px) {
+  #picture_2 {
+    display: block;
+  }
+
+  #flex-container img {
+    width: 45%;
+  }
+
+  #flex-container {
+    justify-content: space-around;
+  }
+
+  #xoxo {
+    margin: 0 auto;
+    width: 50%;
+  }
 }
