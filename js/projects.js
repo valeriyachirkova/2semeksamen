@@ -1,22 +1,22 @@
 /**
- * file: js.js
+ * file: projects.js
  * purpose: interactivity
  **/
 console.log("JavaScript from js/js.js: up and running!");
 
 // Tjek at DOM er indlæst
 $(document).ready(function () {
-  // ... your code here ...
 
-  var video = document.getElementById("video");
+    // ... your code here ...
+    var video = document.getElementById("video");
 
-  $("#media1").click(function () {
-    if (video.paused) {
-      video.play();
-    } else {
-      video.pause();
-    }
-  });
+    $("#media1").click(function () {
+        if (video.paused) {
+            video.play();
+        } else {
+            video.pause();
+        }
+    });
+    // ... end ...
 
-  // ... end ...
 });

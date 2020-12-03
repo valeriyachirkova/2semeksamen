@@ -16,7 +16,6 @@
     width: 100%;
     border-radius: 10px;
 }
-
 /* GALLERY SLUT */
 
 /* IMAGE EFFECT START */
@@ -24,8 +23,9 @@ figure:hover img {
     filter: grayscale(100%);
     transform: scale(1.03);
 }
-
 /* IMAGE EFFECT SLUT */
+
+
 @media only screen and (min-width: 500px) {
     .column {
         width: 45%;
@@ -37,6 +37,3 @@ figure:hover img {
         width: 22%;
     }
 }
-
-/*  mobil skift til desktop !!! */
-@media only screen and (min-width: 1024px) {}

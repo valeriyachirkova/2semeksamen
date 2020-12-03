@@ -204,7 +204,6 @@
          font-size: 1em;
      }
 
-
      /*titel på produkterne*/
      .title {
          font-size: 0.6em;
@@ -221,7 +220,6 @@
          margin: 1%;
      }
 
-
      /*her tilføjes flexbox på produktbilleder*/
      #flex_product {
          display: flex;
@@ -234,7 +232,6 @@
      }
 
  }
-
 
 
  @media only screen and (min-width: 700px) {
@@ -287,7 +284,6 @@
          left: 400px;
      }
 
-
      /*logo video*/
      #logo_spin {
          width: 700px;
@@ -300,7 +296,6 @@
      #text_section p {
          font-size: 1.3em;
      }
-
 
      /*titel på produkterne*/
      .title {
@@ -317,14 +312,12 @@
          margin: 1%;
      }
 
-
      /*her tilføjes flexbox på produktbilleder*/
      #flex_product {
          display: flex;
          justify-content: center;
          padding: 2%;
      }
-
 
      /*titel til ig-feed*/
      #title_ig {
@@ -336,18 +329,11 @@
      #flex_product {
          margin-bottom: 10%;
      }
-
  }
-
-
-
 
 
  /*  mobil skift til desktop !!! */
  @media only screen and (min-width: 1024px) {
-
-
-
      #flex_product {
          margin-bottom: 8%;
      }
@@ -357,21 +343,13 @@
          margin: 0 auto;
          margin-top: 8%;
          margin-bottom: 8%;
-
-
      }
-
 
      #text_section p {
          font-size: 1.5em;
      }
 
-
-
-
      .img_product img:hover {
          opacity: 50%;
-
      }
-
  }

@@ -3,29 +3,34 @@
 
 <head>
     <meta charset="UTF-8" />
+    <meta name="robots" content="noindex, nofollow">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <meta name="description" content="This is the frontpage" />
     <meta name="keywords" content="Frontpage, lollitop, lolli, top, Sustainable, party, style, 2000s, conscious" />
-    <meta name="author" content="John Doe" />
+    <meta name="author" content="Marie Krüger Frøkiær" />
+    
+    <!-- Link virker ikke, skal fikses
+    <link href="//db.onlinewebfonts.com/c/88b96d4bbbd5526e485ca727c48da139?family=Arame" rel="stylesheet" type="text/css"/> -->
+    
+    <link href="https://fonts.googleapis.com/css2?family=Goldman&display=swap" rel="stylesheet" />
+    
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/index.css" />
-
-    <link href="//db.onlinewebfonts.com/c/d90510503d26378f28dcf24063c1b12a?family=hardware+requiem+italic" rel="stylesheet" type="text/css" />
-
-    <link href="https://fonts.googleapis.com/css2?family=Goldman&display=swap" rel="stylesheet" />
-
+    
     <title>Lolli top Home</title>
 </head>
 
 <body>
     <header class="header">
         <div id="top-menu">
-            <a href="index.html">
-                <img src="images/logosilver.png" alt="logo" id="logo" />
+            <a id="logo" href="index.html">
+                <img src="images/logosilver.png" alt="logo" />
             </a>
-            <div id="burger-icon"><img src="images/burger-icon.svg" alt="" /></div>
+            <div id="burger-icon">
+                <img src="images/burger-icon.svg" alt="Menu icon" />
+            </div>
             <ul id="desktop-menu">
                 <li>
                     <a href="shop.html"><span class="menu-underline">S</span>HOP</a>
@@ -46,13 +51,19 @@
                     <a href="about.html"> <span class="menu-underline">A</span>BOUT</a>
                 </li>
             </ul>
-            </div>
+        </div>
+        
+        <ul id="dropdown-menu">
+            <li><a href="shop.html">SHOP</a></li>
+            <li><a href="gallery.html">GALLERY</a></li>
+            <li><a href="projects.html">PROJECTS</a></li>
+            <li><a href="production.html">PRODUCTION</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+        </ul>
     </header>
-
     <!-- .header-->
+
     <!-- content -->
-
-
     <main>
         <h1>HELLO ALL U PEOPLE</h1>
         <h2>U HAVE NOW ARRIVED LOLLI TOPS VITUAL UNIVERS</h2>
@@ -63,8 +74,6 @@
                 <source src="video/logospin.mp4" type="video/mp4">
             </video>
         </section>
-
-
 
         <section>
             <div id="bobble1" class="bobble" data-rate="-0.5" data-direction="vertical">
@@ -107,50 +116,36 @@
             </div>
         </section>
 
-
-       
         <section id="text_section">
-
             <p>U CAN NOW EXPERIENCE AND BUY UNIQUE AND SUSTAINABLE CLOTING</p>
 
             <p>HELP CREATING A BETTER WOLRD AND REMEMBER WHEN LIVE GIVES U LEMON, WAER LOLLI TOP</p>
-
         </section>
-
-
 
         <section id="flex_product">
-          
+
             <div class="img_product">
-               <p class="title">TOP 3 - JELLY BELLY </p>
-                <a href="shop.html"><img src="images/1.1.jpg" alt="product1"></a>
+                <p class="title">TOP 1 - SHINING DISCO</p>
+                <a href="product1.html"><img src="images/1.1.jpg" alt="product1"></a>
+            </div>
+
+            <div class="img_product">
+                <p class="title">TOP 2 - DENIM TUBE</p>
+                <a href="product2.html"><img src="images/2.1.jpg" alt="product2"></a>
             </div>
 
             <div class="img_product">
                 <p class="title">TOP 3 - JELLY BELLY</p>
-                <a href="shop.html"><img src="images/2.1.jpg" alt="product2"></a>
+                <a href="product3.html"><img src="images/3.1.jpg" alt="product3"></a>
             </div>
-
-            <div class="img_product">
-                <p class="title">TOP 3 - JELLY BELLY</p>
-                <a href="shop.html"><img src="images/3.1.jpg" alt="product3"></a>
-            </div>
-            
-            
         </section>
-
-
-
-
     </main>
 
-   
     <section id="instafeed">
-       <p id="title_ig">LOLLI TOP INSTAGRAM</p>
+        <p id="title_ig">LOLLI TOP INSTAGRAM</p>
         <script src="https://apps.elfsight.com/p/platform.js" defer></script>
         <div class="elfsight-app-e005cd8d-1835-4880-b8fd-cc38fead97f5"></div>
     </section>
-
 
     <footer>
         <div class="footer-social-icons">
@@ -165,20 +160,12 @@
         </div>
     </footer>
 
-
-
-
     <!-- load jQuery library -->
     <script src="js/jquery-3.5.1.min.js"></script>
 
     <!-- load JavaScript -->
     <script src="js/js.js"></script>
-
-
     <script src="js/index.js"></script>
-
-
-
 </body>
 
 </html>

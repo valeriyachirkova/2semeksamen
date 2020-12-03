@@ -6,24 +6,34 @@ console.log("JavaScript from js/js.js: up and running!");
 
 // Tjek at DOM er indlæst
 $(document).ready(function () {
+    
     // ... your code here ...
-    $("#test-menu").hide();
+    var isActive = false;
+    var iconArray = [
+        '<img src="images/burger-icon.svg" alt="Menu icon" />',
+        '<img src="images/cross-icon.svg" alt="Menu icon" />'
+    ];
+    
+    $('#burger-icon').click(function(){
+        if (isActive){
+            $(this).html(iconArray[0]);
+            isActive = false;
+        }
+        else {
+            $(this).html(iconArray[1]);
+            isActive = true;
+        }
+    });
+    
+    $("#dropdown-menu").hide();
 
     $("#burger-icon").click(function () {
-        $("#test-menu").toggle();
+        $("#dropdown-menu").toggle();
     });
 
 
-
-
-
-
-
     window.addEventListener('scroll', function (e) {
-
-
         const target = document.querySelectorAll('.bobble');
-
 
         //counting all elements from the variabel target wich contains all list-elements 
         var index = 0,
@@ -41,11 +51,7 @@ $(document).ready(function () {
                 target[index].style.transform = 'translate3d(' + posX + 'px, ' + posY + 'px, 0px)';
             }
         }
-
-
     });
-
-
-
     // ... end ...
+    
 });
