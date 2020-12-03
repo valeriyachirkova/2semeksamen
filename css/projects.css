@@ -1,8 +1,99 @@
+p {
+  font-size: 0.8em;
+}
+
+h2 {
+  margin-bottom: 3%;
+}
+
+.lolli-projects-text {
+  margin-bottom: 3%;
+  text-align: center;
+}
+
+#media {
+  margin-top: 2%;
+  max-width: 98%;
+  margin: 0 auto;
+}
+
+#media1 {
+  text-align: center;
+  position: relative;
+  margin-bottom: 5%;
+}
+
+#video {
+  width: 85%;
+  margin: 0 auto;
+  margin-bottom: 5%;
+  position: absolute;
+  z-index: -10;
+  top: 4%;
+  left: 8%;
+}
+
+#tv-ramme {
+  width: 95%;
+}
+
+.photos {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+  margin-top: 3%;
+  border: 3px solid #04d48a;
+  box-shadow: 4px 4px black;
+}
+
 @media only screen and (min-width: 500px) {
+  #media1 {
+    max-width: 500px;
+    margin: 0 auto;
+    margin-bottom: 2%;
+  }
+
+  .lolli-projects-text {
+    max-width: 550px;
+    margin: 0 auto;
+  }
+  .photos {
+    width: 30%;
+  }
+  #media2 {
+    display: flex;
+  }
 }
 
 @media only screen and (min-width: 700px) {
+  h2,
+  .lolli-projects-text,
+  #media2 {
+    max-width: 950px;
+  }
+
+  #media2 {
+    max-width: 950px;
+    margin: 0 auto;
+  }
+
+  .photos {
+    transition: transform 0.15s;
+  }
+
+  .photos:hover {
+    -ms-transform: scale(1.1); /* IE 9 */
+    -webkit-transform: scale(1.1); /* Safari 3-8 */
+    transform: scale(1.1);
+  }
 }
+
 /*  mobil skift til desktop !!! */
 @media only screen and (min-width: 1024px) {
+  .lolli-projects-text {
+    line-height: 125%;
+    font-size: 1.2em;
+    margin: 0 auto;
+  }
 }
