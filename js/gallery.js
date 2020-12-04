@@ -17,7 +17,7 @@ $(document).ready(function () {
         $(this).css("transform", "scale(1)");
     });
     
-    /* Midlertidig billede effekt. Java Script vil erstatte det for fremtiden */
+    /* Midlertidig billede effekt, indtil tekst er tilføjet for fremtiden */
     $(".hover-effect").children("img").mouseover(function () {
         $(this).css("transform", "scale(1.05)");
     });

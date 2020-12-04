@@ -1,7 +1,19 @@
+@font-face {
+    src: url(../fonts/ArameMono-Regular.otf);
+    font-family: Arame;
+}
+
+@font-face {
+    src: url(../fonts/ayuthaya.ttf);
+    font-family: Ayut;
+}
+
+
 body {
     font-size: 20px;
     background-image: url(../images/background.jpg);
-    font-family: "Arame";
+    font-family: Ayut;
+    line-height: normal;
     color: #4b4b4b;
 }
 
@@ -34,7 +46,7 @@ body {
     margin: 0.5em;
     color: #db1f99;
     font-family: 'goldman';
-    border-bottom: 2px dashed #05d48a;
+    border-bottom: 2px dashed green;
     font-size: 1.2em;
 }
 
@@ -48,13 +60,12 @@ body {
 }
 
 #bread-crumb {
-    margin-left: 25px;
-    margin-top: 30px;
+    margin-left: 15px;
+    margin-top: 15px;
 }
 
 #bread-crumb a {
-    color: #737772;
-    font-size: 0.6em;
+    font-size: 0.7em;
     font-family: "Arame";
 }
 
@@ -64,7 +75,7 @@ h1 {
     -webkit-text-stroke: 1px #db1f99;
     text-shadow: 5px 1px #db1f99;
     text-align: center;
-    font-family: "Arame";
+    font-family: Arame;
     margin-top: 4%;
     margin-bottom: 4%;
 }

@@ -1,4 +1,3 @@
-
 h2 {
     margin-bottom: 0;
 }
@@ -11,6 +10,7 @@ h2 {
 .product_showcase {
     position: relative;
     text-align: center;
+    font-size: 0.8em;
 }
 
 .product_pic {
@@ -33,7 +33,7 @@ h2 {
     color: #fff;
     left: 8%;
     top: 37%;
-    padding: 20px;
+    padding: 20px 10px;
     box-sizing: border-box;
     z-index: -10;
 }
@@ -46,10 +46,12 @@ h2 {
 }
 
 .price {
-    color: #05D48A;
-    font-weight: bold;
+    font-size: 1.2em;
+    color: #05d48a;
     -webkit-text-stroke: 0.5px black;
-    text-shadow: 1px 1px black;
+    text-shadow: 2px 2px black;
+    text-align: center;
+    font-family: 'goldman';
 }
 
 #icon-series {
@@ -72,6 +74,14 @@ h2 {
         display: flex;
         justify-content: space-around;
     }
+    
+    .see-more-text {
+        font-size: 1em;
+    }
+    
+    h2 {
+        margin: 0;
+    }
 }
 
 
@@ -80,14 +90,17 @@ h2 {
     h2 {
         font-size: 1.4em;
     }
-    
+
     .product-and-info {
-        
-    max-width: 500px;
+        max-width: 500px;
     }
-    
+
     .icon-and-text {
         font-size: 0.7em;
         max-width: 120px;
+    }
+    
+    .see-more-text {
+        font-size: 1.2em;
     }
 }

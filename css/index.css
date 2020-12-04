@@ -4,6 +4,67 @@
      margin-bottom: 2%;
  }
 
+ #black-box {
+     background-color: rgba(0, 0, 0, 0.8);
+     width: 100%;
+     height: 100%;
+     position: fixed;
+     z-index: 100;
+     text-align: center;
+ }
+
+ #position-relative {
+     position: relative;
+     max-width: 400px;
+     margin: 2em auto;
+     cursor: pointer;
+ }
+
+ #position-relative video {
+     width: 90%;
+     position: absolute;
+     z-index: -1;
+     left: 6%;
+     top: 5%;
+ }
+
+ #play-button {
+     position: absolute;
+     width: 80px;
+     z-index: 1;
+     left: 42%;
+     top: 38%;
+ }
+
+ #position-relative #tv-frame {
+     width: 100%;
+     margin: 1em 0;
+ }
+
+ #black-box p {
+     align-self: center;
+     background-color: #db1f99;
+     border-radius: 4px;
+     box-shadow: 4px 4px #9ccfed;
+     font-family: 'goldman';
+     padding: 10px;
+     width: 80%;
+     margin: 0 auto;
+     color: #fff;
+     max-width: 250px;
+ }
+
+ #black-box p:hover {
+     cursor: pointer;
+     background-color: #ff77cf;
+ }
+
+ #black-box p:active {
+     transform: translate(4px, 4px);
+     box-shadow: none;
+     background-color: #ff77cf;
+ }
+
 
  /*parallax bobler*/
  .bobble img {
@@ -105,6 +166,7 @@
  .img_product {
      margin: 5%;
      position: relative;
+     max-width: 400px;
  }
 
  .see-more-text {
@@ -114,7 +176,7 @@
      color: #fff;
      left: 10%;
      top: 40%;
-     padding: 10px;
+     padding: 20px 10px;
      box-sizing: border-box;
      z-index: -10;
      font-size: 0.8em;
@@ -317,7 +379,7 @@
      }
 
      #text_section p {
-         font-size: 1.3em;
+         font-size: 1em;
      }
 
      /*titel på produkterne*/
@@ -362,6 +424,10 @@
 
  /*  mobil skift til desktop !!! */
  @media only screen and (min-width: 1024px) {
+     #black-box p {
+         font-size: 1em;
+     }
+
      #flex_product {
          margin-bottom: 8%;
      }
@@ -375,5 +441,9 @@
 
      #text_section p {
          font-size: 1.5em;
+     }
+
+     .see-more-text {
+         font-size: 1em;
      }
  }
