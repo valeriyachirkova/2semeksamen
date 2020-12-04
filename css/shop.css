@@ -29,7 +29,6 @@ h2 {
 .see-more-text {
     position: absolute;
     width: 85%;
-    z-index: 5;
     background-color: rgba(219, 31, 153, 0.5);
     color: #fff;
     left: 8%;

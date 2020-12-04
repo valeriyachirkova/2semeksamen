@@ -25,6 +25,14 @@ $(document).ready(function () {
             video.pause();
         }
     });
+    
+    
+    $(".img_product").mouseover(function () {
+        $(this).children(".see-more-text").css("z-index", "10");
+    });
+    $(".img_product").mouseout(function () {
+        $(this).children(".see-more-text").css("z-index", "-10");
+    });
     // ... end ...
 
 });
