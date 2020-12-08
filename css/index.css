@@ -1,9 +1,16 @@
- /*logo video*/
+
+
+/*logo video*/
  #logo_play video {
      max-width: 100%;
      margin-bottom: 2%;
  }
 
+p{
+     font-family: 'goldman';
+}
+
+/*introduktions pop-up*/
  #black-box {
      background-color: rgba(0, 0, 0, 0.8);
      width: 100%;
@@ -150,7 +157,9 @@
  #text_section p {
      font-size: 0.7em;
      text-align: center;
+     padding-bottom: 3%;
  }
+
 
  /*titel på produkterne*/
  .title {
@@ -170,6 +179,16 @@
      max-width: 400px;
  }
 
+
+ .img_product img {
+     width: 80%;
+     border: 3px solid #05d48a;
+     display: block;
+     margin: 0 auto;
+     box-shadow: 4px 4px black;
+ }
+
+/*tekstboks på produktbillederne*/
  .see-more-text {
      position: absolute;
      width: 80%;
@@ -184,13 +203,6 @@
      text-align: center;
  }
 
- .img_product img {
-     width: 80%;
-     border: 3px solid #05d48a;
-     display: block;
-     margin: 0 auto;
-     box-shadow: 4px 4px black;
- }
 
  /*titel til ig-feed*/
  #title_ig {
@@ -265,7 +277,6 @@
      }
 
 
-
      /*logo video*/
      #logo_play {
          margin: 0 auto;
@@ -319,9 +330,13 @@
 
  }
 
-
+ /*her tilføjes anden media-query*/
  @media only screen and (min-width: 700px) {
 
+     h2{
+         margin-bottom: 1%;
+     }
+     
      /*parallax bobler*/
      #bobble1 img {
          width: 10%;
@@ -366,25 +381,27 @@
      }
 
      #bobble9 img {
-         width: 10%;
+         width: 100%;
+         height: 10%;
          left: 400px;
      }
 
      /*logo video*/
      #logo_spin {
-         width: 700px;
          margin: 0 auto;
          text-align: center;
          margin-top: 5%;
-         box-shadow: 3px 3px 5px;
+         box-shadow: 5px 5px 5px;
      }
 
+     /*tekst introduktion*/
      #text_section p {
          font-size: 1em;
      }
 
      /*titel på produkterne*/
      .title {
+         width: 95%;
          font-size: 0.8em;
      }
 
@@ -422,9 +439,14 @@
      }
  }
 
-
- /*  mobil skift til desktop !!! */
+ /*her tilføjes tredje media-query*/
+ /*  mobil/tablet skift til desktop !!! */
  @media only screen and (min-width: 1024px) {
+     
+     h2{
+         margin-bottom: 0;
+     }
+     
      #black-box p {
          font-size: 1em;
      }
@@ -434,14 +456,14 @@
      }
 
      #text_section {
-         width: 70%;
+         width: 60%;
          margin: 0 auto;
-         margin-top: 8%;
-         margin-bottom: 8%;
+         margin-top: 3%;
+         margin-bottom: 3%;
      }
 
      #text_section p {
-         font-size: 1.5em;
+         font-size: 1.2em;
      }
 
      .see-more-text {
