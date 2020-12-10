@@ -9,7 +9,7 @@ $(document).ready(function () {
   // ... your code here ...
   var productPic = document.getElementsByClassName("product_pic");
     var picButtons = document.getElementsByClassName("pic_button");
-    var pictureIndex = 1;
+    var pictureIndex = 0;
     showPicture(pictureIndex);
     
     function currentPicture(n) {
@@ -24,12 +24,12 @@ $(document).ready(function () {
         for (i = 0; i < picButtons.length; i++) {
             picButtons[i].className = picButtons[i].className.replace(" active", "");
         }
-        productPic[pictureIndex - 1].style.display = "block";
-        picButtons[pictureIndex - 1].className += " active";
+        productPic[pictureIndex].style.display = "block";
+        picButtons[pictureIndex].className += " active";
     }
     
-    $('#front_pic').click(function(){currentPicture(1)});
-    $('#side_pic').click(function(){currentPicture(2)});
-    $('#back_pic').click(function(){currentPicture(3)});
+    $('#front_pic').click(function(){currentPicture(0)});
+    $('#side_pic').click(function(){currentPicture(1)});
+    $('#back_pic').click(function(){currentPicture(2)});
   // ... end ...
 });
