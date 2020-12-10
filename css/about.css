@@ -21,6 +21,10 @@
   width: 50%;
 }
 
+#text_1 {
+  margin-bottom: 3%;
+}
+
 @media only screen and (min-width: 600px) {
   #picture_2 {
     display: block;
