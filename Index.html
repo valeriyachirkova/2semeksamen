@@ -6,8 +6,8 @@
     <meta name="robots" content="noindex, nofollow">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <meta name="description" content="This is the frontpage" />
-    <meta name="keywords" content="Frontpage, lollitop, lolli, top, Sustainable, party, style, 2000s, conscious" />
+    <meta name="description" content="Welcome to Lollitop unique world" />
+    <meta name="keywords" content="lollitop, lolli, top, Sustainable, style, conscious, recycle, upcycle" />
     <meta name="author" content="Marie Krüger Frøkiær" />
 
     <link href="https://fonts.googleapis.com/css2?family=Goldman&display=swap" rel="stylesheet" />
@@ -21,7 +21,7 @@
 
 <body>
 
-    <!--Parallax bobler - sættes øverst for nemmere at kunne bruge postion: absolut i CSS og give hvert enkelt billede en startposition-->
+    <!--Parallax bobler - sættes øverst fordi boblerne skal svæve over alle elementer i HTML dokumentet, når de får position: absolut-->
     <section>
         <div id="bobble1" class="bobble" data-rate="-0.5">
             <img src="images/bobble1.png" alt="bobble1">
@@ -80,20 +80,22 @@
             <img src="images/play_button.svg" alt="Play button" id="play-button">
             <img src="images/tv.png" alt="">
         </div>
-        <p id="start-button">START UR JOURNEY</p> //CTA
+        <p id="start-button">START UR JOURNEY</p><!--CTA-->
     </div>
 
     <!--header med logo og navigation-->
-
-    <!--desktop-navigation-->
     <header class="header">
         <div id="top-menu">
             <a id="logo" href="index.html">
                 <img src="images/logosilver.png" alt="logo" />
             </a>
+            
+            <!--Burger ikon der vil skifte til et kryds og tilbage igen, via JavaScript, når man klikker på det-->
             <div id="burger-icon">
                 <img src="images/burger-icon.svg" alt="Menu icon" />
             </div>
+            
+            <!--desktop navigation-->
             <ul id="desktop-menu">
                 <li>
                     <a href="shop.html"><span class="menu-underline">S</span>HOP</a>
@@ -116,7 +118,7 @@
             </ul>
         </div>
 
-        <!--mobile-navigation-->
+        <!--mobile pop-up navigation-->
         <ul id="dropdown-menu">
             <li><a href="shop.html">SHOP</a></li>
             <li><a href="gallery.html">GALLERY</a></li>
@@ -125,7 +127,7 @@
             <li><a href="about.html">ABOUT</a></li>
         </ul>
     </header>
-    <!-- .header-->
+    <!--header slut-->
 
     <!-- content -->
     <main>
