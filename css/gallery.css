@@ -1,5 +1,5 @@
 /* GALLERY START */
-
+/* rækker og kolonner med billeder */
 .row {
     display: flex;
     flex-wrap: wrap;

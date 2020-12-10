@@ -12,6 +12,7 @@
     font-size: 0.8em;
 }
 
+/* her er infographic til mobile */
 @media only screen and (min-width: 700px) {
     #flexbox1 {
         display: flex;
