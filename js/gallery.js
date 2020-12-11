@@ -10,7 +10,7 @@ $(document).ready(function () {
     // ... your code here ...
     $(".position-relative").mouseover(function () {
         $(this).children(".pop-up-text").css("z-index", "5");
-        $(this).css("transform", "scale(1.05)");
+        $(this).css("transform", "scale(1.1)")
     });
     $(".position-relative").mouseout(function () {
         $(this).children(".pop-up-text").css("z-index", "-10");
@@ -19,7 +19,7 @@ $(document).ready(function () {
     
     /* Midlertidig billede effekt, indtil tekst er tilføjet for fremtiden */
     $(".hover-effect").children("img").mouseover(function () {
-        $(this).css("transform", "scale(1.05)");
+        $(this).css("transform", "scale(1.1)");
     });
     $(".hover-effect").children("img").mouseout(function () {
         $(this).css("transform", "scale(1)");

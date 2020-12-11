@@ -24,7 +24,7 @@
     <header class="header">
         <div id="top-menu">
             <a id="logo" href="index.html">
-                <img src="images/logosilver.png" alt="logo" />
+                <img src="images/logosilver.webp" alt="logo" />
             </a>
 
             <!--Burger ikon der vil skifte til et kryds og tilbage igen, via JavaScript, når man klikker på det-->
@@ -73,48 +73,69 @@
             <a href="product1.html">TOP 14 - I.D.A.R.O.</a>
         </p>
 
-        <h1>U WANT TOP NR 14?</h1>
+        <article>
+            <h1>U WANT TOP NR 14?</h1>
 
-        <article id="product">
-            <!-- Her har jeg en div for at isolere showcase af produktet, så jeg bedre kan rygge rundt på det-->
-            <div>
-                <h3>I.D.A.R.O.</h3>
-                <div id="product_showcase">
-                    <div id="pic_change">
-                        <img src="images/4.3m.jpg" alt="" class="product_pic">
-                        <img src="images/4.2m.jpg" alt="" class="product_pic">
-                        <img src="images/4.1m.jpg" alt="" class="product_pic">
+            <section id="product">
+                <!-- Her har jeg en div for at isolere showcase af produktet, så jeg bedre kan rygge rundt på det-->
+                <div>
+                    <h3>I.D.A.R.O.</h3>
+                    <div id="product_showcase">
+                        <div id="pic_change">
+                            <img src="images/4.3m.webp" alt="" class="product_pic">
+                            <img src="images/4.2m.webp" alt="" class="product_pic">
+                            <img src="images/4.1m.webp" alt="" class="product_pic">
+                        </div>
+                        <img src="images/tv.webp" alt="" id="tv_frame">
                     </div>
-                    <img src="images/tv.png" alt="" id="tv_frame">
+                    <div id="choose_pic">
+                        <p class="pic_button" id="front_pic">Front</p>
+                        <p class="pic_button" id="side_pic">Side</p>
+                        <p class="pic_button" id="back_pic">Back</p>
+                    </div>
                 </div>
-                <div id="choose_pic">
-                    <p class="pic_button" id="front_pic">Front</p>
-                    <p class="pic_button" id="side_pic">Side</p>
-                    <p class="pic_button" id="back_pic">Back</p>
-                </div>
-            </div>
 
-            <!-- Her skal teksten, der til større skærme skal flexes ved siden af showcase, stå-->
-            <div id="product_info">
-                <div class="info">
-                    <p class="bold">SIZE</p>
-                    <p>Huge size</p>
+                <!-- Her skal teksten, der til større skærme skal flexes ved siden af showcase, stå-->
+                <div id="product_info">
+                    <div class="info">
+                        <p class="bold">SIZE</p>
+                        <p>Huge size</p>
+                    </div>
+                    <div class="info">
+                        <p class="bold">TOP NR</p>
+                        <p>14</p>
+                    </div>
+                    <div class="info">
+                        <p class="bold">INFORMATION</p>
+                        <p>Cotton</p>
+                    </div>
+                    <div class="info">
+                        <p class="bold">CARE CONDITION</p>
+                        <p>Machine wash</p>
+                    </div>
+                    <p id="price">350 kr</p>
+                    <p id="add_to_bag_button">ADD TO BAG</p>
                 </div>
-                <div class="info">
-                    <p class="bold">TOP NR</p>
-                    <p>14</p>
+            </section>
+
+            <section id="icon-series">
+                <div class="icon-and-text">
+                    <img src="images/Truck.svg" alt="Truck icon" />
+                    <p>FAST DELIVERY</p>
                 </div>
-                <div class="info">
-                    <p class="bold">INFORMATION</p>
-                    <p>Cotton</p>
+                <div class="icon-and-text">
+                    <img src="images/Coin.svg" alt="Coin icon" />
+                    <p>FREE SHIPPING</p>
                 </div>
-                <div class="info">
-                    <p class="bold">CARE CONDITION</p>
-                    <p>Machine wash</p>
+                <div class="icon-and-text">
+                    <img src="images/Phone-Card.svg" alt="Phone and card icon" />
+                    <p>SAFE PAYMENT</p>
                 </div>
-                <p id="price">350 kr</p>
-                <p id="add_to_bag_button">ADD TO BAG</p>
-            </div>
+                <div class="icon-and-text">
+                    <img src="images/Scissor.svg" alt="Scissor icon" />
+                    <p>UNIQUE 1 OF 1 ITEMS</p>
+                </div>
+            </section>
         </article>
     </main>
 

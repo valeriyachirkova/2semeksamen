@@ -106,6 +106,32 @@ h3 {
     background-color: #ff77cf;
 }
 
+#icon-series {
+    margin: 2em 0 1em;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.icon-and-text {
+  width: 35%;
+  max-width: 100px;
+  margin: 20px;
+  font-size: 0.8em;
+  text-align: center;
+}
+
+.icon-and-text img {
+  width: 70%;
+}
+
+.icon-and-text p {
+  font-size: 0.7em;
+}
+
+
+
+
 @media only screen and (min-width: 500px) {
     #price {
         font-size: 1.5em;
@@ -172,4 +198,10 @@ h3 {
     #choose_pic p {
         font-size: 1em;
     }
+    
+    
+  .icon-and-text {
+    font-size: 0.7em;
+    max-width: 120px;
+  }
 }
