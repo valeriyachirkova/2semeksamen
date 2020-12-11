@@ -1,141 +1,174 @@
+h3 {
+    font-size: 1.2em;
+    color: lightgrey;
+    -webkit-text-stroke: 0.5px black;
+    text-shadow: 2px 2px black;
+    text-align: center;
+    font-family: "goldman";
+    margin-bottom: 5%;
+    margin-bottom: 0;
+}
+
 #product_showcase {
-  position: relative;
-  text-align: center;
+    position: relative;
+    text-align: center;
 }
 
 #pic_change img {
-  width: 80%;
-  position: absolute;
-  left: 11%;
-  z-index: -5;
-  top: 5%;
+    width: 80%;
+    position: absolute;
+    left: 11%;
+    z-index: -5;
+    top: 5%;
 }
 
 #tv_frame {
-  width: 90%;
-  position: relative;
+    width: 90%;
+    position: relative;
 }
 
 #choose_pic {
-  display: flex;
-  width: 80%;
-  margin: 0 auto;
-  justify-content: center;
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+    justify-content: center;
 }
 
 #choose_pic p {
-  padding: 3px;
-  margin: auto 8px;
-  background-color: #db1f99;
-  border-radius: 4px;
-  box-shadow: 2px 2px #000;
-  color: #fff;
-  width: 15%;
-  text-align: center;
-  font-size: 0.8em;
+    padding: 3px;
+    margin: auto 8px;
+    background-color: #db1f99;
+    border-radius: 4px;
+    box-shadow: 2px 2px #000;
+    color: #fff;
+    width: 15%;
+    text-align: center;
+    font-size: 0.8em;
 }
 
 #choose_pic p:hover {
-  cursor: pointer;
-  background-color: #ff77cf;
+    cursor: pointer;
+    background-color: #ff77cf;
 }
 
 #choose_pic .active,
 #choose_pic p:active {
-  transform: translate(4px, 4px);
-  box-shadow: none;
-  background-color: #ff77cf;
+    transform: translate(4px, 4px);
+    box-shadow: none;
+    background-color: #ff77cf;
 }
 
 #product_info {
-  font-size: 0.8em;
-  width: 80%;
-  margin: 30px auto 0;
-  text-align: center;
+    width: 80%;
+    margin: 4% auto 0;
+    text-align: center;
 }
 
-#product_info p {
-  margin: 1em auto;
+.info {
+    margin: 0 auto 1em;
+    font-size: 0.8em;
 }
 
-.bold {
-  font-weight: bold;
+#product_info .bold {
+    font-weight: bold;
+    font-size: 1.3em;
 }
 
-#price {
-  font-size: 1.2em;
-  color: #05d48a;
-  -webkit-text-stroke: 0.5px black;
-  text-shadow: 2px 2px black;
-  font-family: "goldman";
+#product_info #price {
+    font-size: 1.3em;
+    color: #05d48a;
+    -webkit-text-stroke: 0.5px black;
+    text-shadow: 2px 2px black;
+    font-family: "goldman";
+    margin: 0 auto 1em;
 }
 
 #add_to_bag_button {
-  width: 180px;
-  font-weight: bold;
-  margin: 0 auto;
-  padding: 5px;
-  background-color: #db1f99;
-  border-radius: 4px;
-  box-shadow: 4px 4px #000;
-  color: #fff;
-  text-align: center;
+    width: 180px;
+    font-weight: bold;
+    margin: 0 auto;
+    padding: 5px;
+    background-color: #db1f99;
+    border-radius: 4px;
+    box-shadow: 4px 4px #000;
+    color: #fff;
+    text-align: center;
 }
 
 #add_to_bag_button:hover {
-  cursor: pointer;
-  background-color: #ff77cf;
+    cursor: pointer;
+    background-color: #ff77cf;
 }
 
 #add_to_bag_button:active {
-  transform: translate(4px, 4px);
-  box-shadow: none;
-  background-color: #ff77cf;
+    transform: translate(4px, 4px);
+    box-shadow: none;
+    background-color: #ff77cf;
 }
 
 @media only screen and (min-width: 500px) {
-  #price {
-    font-size: 1.5em;
-  }
+    #price {
+        font-size: 1.5em;
+    }
 }
 
 @media only screen and (min-width: 700px) {
-  h2 {
-    width: 45%;
-  }
+    #product {
+        display: flex;
+        justify-content: center;
+    }
 
-  #product {
-    display: flex;
-    justify-content: center;
-  }
+    #product_info #price {
+        margin-top: 0.5em;
+    }
 
-  #product_info #price {
-    margin-top: 0.5em;
-  }
+    #product_info {
+        text-align: left;
+        margin-left: 2em;
+        width: 35%;
+        margin-right: 0;
+    }
 
-  #product_info {
-    text-align: left;
-    margin-left: 2em;
-    width: 35%;
-    margin-right: 0;
-  }
+    #product_info #add_to_bag_button {
+        text-align: center;
+        margin: auto 0;
+    }
 
-  #product_info #add_to_bag_button {
-    text-align: center;
-    margin: auto 0;
-  }
-
-  #product_showcase {
-    max-width: 650px;
-  }
+    #product_showcase {
+        max-width: 650px;
+    }
 }
 
 @media only screen and (min-width: 1024px) {
-  #product_info {
-    margin-left: 4em;
-  }
+    h3 {
+        font-size: 1.4em;
+    }
 
-  #choose_pic p {
-    font-size: 1em;
-  }
+    .info p {
+        font-size: 1.2em;
+    }
+
+    #product_info .bold {
+        font-size: 1.5em;
+    }
+
+    #product_info {
+        margin: 45px 0 0 4em;
+    }
+
+    #product_info #price {
+        font-size: 1.5em;
+    }
+
+    #product_info #add_to_bag_button {
+        font-size: 1.2em;
+    }
+
+    #add_to_bag_button {
+        width: 200px;
+    }
+
+    #choose_pic p {
+        font-size: 1em;
+    }
 }
