@@ -192,7 +192,7 @@ h4{
 }
 
 .img_product {
-    margin: 5%;
+    margin: 2em 0;
     position: relative;
     max-width: 400px;
 }
@@ -200,7 +200,6 @@ h4{
 
 .img_product img {
     width: 80%;
-    border: 3px solid #05d48a;
     display: block;
     margin: 0 auto;
     box-shadow: 4px 4px black;
@@ -319,9 +318,9 @@ h4{
     }
 
     .see-more-text {
-        left: 2%;
+        left: 2.5%;
         top: 35%;
-        width: 96%;
+        width: 95%;
         font-size: 0.6em;
     }
 

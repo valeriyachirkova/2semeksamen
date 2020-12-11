@@ -116,6 +116,7 @@ h3 {
     #product {
         display: flex;
         justify-content: center;
+        margin-top: 2em;
     }
 
     #product_info #price {
@@ -141,7 +142,7 @@ h3 {
 
 @media only screen and (min-width: 1024px) {
     h3 {
-        font-size: 1.4em;
+        font-size: 2em;
     }
 
     .info p {
@@ -153,7 +154,7 @@ h3 {
     }
 
     #product_info {
-        margin: 45px 0 0 4em;
+        margin: 45px 0 0 2em;
     }
 
     #product_info #price {

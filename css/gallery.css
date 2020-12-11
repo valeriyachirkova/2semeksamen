@@ -41,21 +41,18 @@
 
 /* IMAGE EFFECT SLUT */
 
-/*her tilføjes første media-query*/
 @media only screen and (min-width: 500px) {
     .column {
         width: 45%;
     }
 }
 
-/*her tilføjes anden media-query*/
 @media only screen and (min-width: 700px) {
     .column {
         width: 22%;
     }
 }
 
-/*her tilføjes tredje media-query*/
 @media only screen and (min-width: 1024px) {
     .pop-up-text {
         font-size: 0.8em;

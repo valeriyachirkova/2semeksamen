@@ -20,7 +20,7 @@
 /*Gif*/
 #xoxo {
   margin: 0 auto;
-  width: 50%;
+  width: 40%;
 }
 
 #text_1 {
@@ -33,15 +33,22 @@
   }
 
   #flex-container img {
-    width: 45%;
+   width: 40%;
+       margin: 0.5em;
+      
   }
 
   #flex-container {
-    justify-content: space-around;
+    justify-content: center;
   }
 
+    
   #xoxo {
     margin: 0 auto;
-    width: 50%;
   }
+    
+    #text {
+  margin: 0 auto;
+  width: 82%;
+}
 }

@@ -28,13 +28,13 @@ $(document).ready(function () {
     
     var video = document.getElementById("logo_spin");
 
-   /* $(video).mouseover(function () {
+   $(video).mouseover(function () {
         video.play();
     });
 
     $(video).mouseout(function () {
         video.pause();
-    });*/
+    });
 
     $(video).click(function () {
         if (video.paused) {
