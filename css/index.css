@@ -1,11 +1,8 @@
+
 /*logo video*/
 #logo_play video {
     max-width: 100%;
     margin-bottom: 2%;
-}
-
-p {
-    font-family: 'goldman';
 }
 
 /*introduktions pop-up*/
@@ -46,6 +43,30 @@ p {
     margin: 1em 0;
 }
 
+/*heading pop-up*/
+h3{
+    font-size: 1.7em;
+    color: #f1b3d1;
+    -webkit-text-stroke: 1px #db1f99;
+    text-shadow: 5px 1px #db1f99;
+    text-align: center;
+    font-family: Arame;
+    margin-top: 0.3em;
+    margin-bottom: 0.3em;
+}
+
+/*heading pop-up*/
+h4{
+    font-size: 0.9em;
+    color: #05d48a;
+    -webkit-text-stroke: 0.5px black;
+    text-shadow: 2px 2px black;
+    text-align: center;
+    font-family: "goldman";
+    margin-bottom: 0.5em;
+}
+
+/*button i pop-up*/
 #black-box p {
     align-self: center;
     background-color: #db1f99;
@@ -78,69 +99,69 @@ p {
 }
 
 #bobble1 img {
-    width: 20%;
+    max-width: 90px;
     right: 100px;
     top: 300px;
 }
 
 #bobble2 img {
-    width: 30%;
+    max-width: 60px;
     right: 30px;
-    top: 500px;
+    top: 400px;
 }
 
 #bobble3 img {
-    width: 10%;
-    left: 20px;
-    top: 700px;
+    max-width: 60px;
+    left: 5px;
+    top: 600px;
 }
 
 #bobble4 img {
-    width: 15%;
-    left: 50px;
-    top: 900px;
+    max-width: 80px;
+    left: 10px;
+    top: 800px;
 }
 
 #bobble5 img {
-    width: 10%;
+    max-width: 100px;
     right: 3px;
-    top: 1000px;
+    top: 900px;
 }
 
 #bobble6 img {
-    width: 20%;
+    max-width: 60px;
     left: 3px;
-    top: 1500px;
+    top: 1000px;
 }
 
 #bobble7 img {
-    width: 25%;
+    max-width: 90px;
     right: 3px;
-    top: 1700px;
+    top: 1200px;
 }
 
 #bobble8 img {
-    width: 10%;
-    right: 50px;
-    top: 1800px;
+    max-width: 100px;
+    right: 3px;
+    top: 1400px;
 }
 
 #bobble9 img {
-    width: 15%;
-    left: 30px;
-    top: 2000px;
+    max-width: 60px;
+    left: 5px;
+    top: 1600px;
 }
 
 #bobble10 img {
-    width: 20%;
+    max-width: 40px;
     right: 3px;
-    top: 2200px;
+    top: 1650px;
 }
 
 #bobble11 img {
-    width: 25%;
-    right: 30px;
-    top: 2500px;
+    max-width: 80px;
+    right: 2px;
+    top: 1800px;
 }
 
 /*tekstintroduktion*/
@@ -226,50 +247,40 @@ p {
 
     /*parallax bobler*/
     #bobble1 img {
-        width: 15%;
         right: 80px;
     }
 
     #bobble2 img {
-        width: 25%;
         right: 50px;
     }
 
     #bobble3 img {
-        width: 10%;
         left: 100px;
     }
 
     #bobble4 img {
-        width: 15%;
         left: 50px;
     }
 
     #bobble5 img {
-        width: 10%;
         right: 3px;
     }
 
 
     #bobble6 img {
-        width: 20%;
         left: 3px;
     }
 
 
     #bobble7 img {
-        width: 25%;
         right: 200px;
     }
 
     #bobble8 img {
-        width: 10%;
         right: 50px;
-        top: 800px;
     }
 
     #bobble9 img {
-        width: 15%;
         left: 400px;
     }
 
@@ -341,49 +352,40 @@ p {
 
     /*parallax bobler*/
     #bobble1 img {
-        width: 10%;
         right: 120px;
     }
 
     #bobble2 img {
-        width: 15%;
         right: 200px;
     }
 
     #bobble3 img {
-        width: 5%;
         left: 100px;
     }
 
     #bobble4 img {
-        width: 10%;
         left: 150px;
     }
 
     #bobble5 img {
-        width: 10%;
         right: 500px;
     }
 
 
     #bobble6 img {
-        width: 15%;
         left: 150px;
     }
 
 
     #bobble7 img {
-        width: 15%;
         right: 300px;
     }
 
     #bobble8 img {
-        width: 10%;
         right: 50px;
     }
 
     #bobble9 img {
-        width: 10%;
         left: 400px;
     }
 
@@ -443,10 +445,6 @@ p {
 /*her tilføjes tredje media-query*/
 /*  mobil/tablet skift til desktop !!! */
 @media only screen and (min-width: 1024px) {
-
-    h2 {
-        margin-bottom: 0;
-    }
 
     #black-box p {
         font-size: 1em;
