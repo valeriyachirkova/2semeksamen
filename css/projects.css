@@ -38,10 +38,10 @@ h2 {
 
 /* Dette er play button til tv'et*/
 #play-button {
-    width: 100px;
+    width: 70px;
     position: absolute;
-    top: 37%;
-    left: 40%;
+    top: 35%;
+    left: 42%;
 }
 
 #tv-ramme {
@@ -71,6 +71,11 @@ h2 {
         margin: 2em auto;
         
     }
+    
+    #play-button {
+    width: 100px;
+    top: 37%;
+}
 
     /* Her gives der width til billeder og flexes til tablet */
     .photos {
