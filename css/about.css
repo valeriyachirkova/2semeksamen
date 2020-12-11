@@ -1,7 +1,8 @@
+/*Skjuler picture_2 pga skærmstørrelse*/
 #picture_2 {
   display: none;
 }
-
+/*billeder der flexer horisontalt*/
 #flex-container {
   display: flex;
   justify-content: center;
@@ -11,11 +12,12 @@
 #picture_1 {
   width: 90%;
 }
-
+/*tekstintroduktion - tekstbokse på billederne*/
 #text {
   margin: 0 auto;
   width: 90%;
 }
+/*Gif*/
 #xoxo {
   margin: 0 auto;
   width: 50%;
@@ -24,7 +26,7 @@
 #text_1 {
   margin-bottom: 3%;
 }
-
+/*her tilføjes første media-query*/
 @media only screen and (min-width: 600px) {
   #picture_2 {
     display: block;
