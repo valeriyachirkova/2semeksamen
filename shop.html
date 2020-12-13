@@ -74,9 +74,16 @@
             <h1>SHOP</h1>
             <h2>WHEN LIVE GIVES U LEMONS WEAR LOLLITOP</h2>
 
+            <!-- Denne div er for at kunne flexe produkterne ved siden af hinanden på større skærme -->
             <div class="product-flex">
+                
+                <!-- Samme struktur for alle produkterne starter her -->
                 <section class="product-and-info">
+                   
+                    <!-- Navnet på produktet -->
                     <h3>ZUKUNFT</h3>
+
+                    <!-- Link til at kunne klikke ind på produktets side -->
                     <a href="product1.html">
                         <div class="product_showcase">
                             <picture class="product_pic">
@@ -85,7 +92,10 @@
                                 <img src="images/1.1.jpg" alt="Picture of cloth">
                             </picture>
 
+                            <!-- Tekstboks som kun skal kunne ses når man trækker musen over det tilhørende billede -->
                             <p class="see-more-text">SEE MORE</p>
+
+                            <!-- Dette er tv rammen der kommer foran billederne. Den skal stå her i strukturen, så den flytter sig op foran billederne, når billederne bliver givet "position: absolut" -->
                             <picture class="tv_frame">
                                 <source srcset="images/tv.webp" type="image/webp">
                                 <source srcset="images/tv.png" type="image/png">
@@ -93,11 +103,14 @@
                             </picture>
                         </div>
                     </a>
+                    
+                    <!-- En smule information til produktet, placert under produktet -->
                     <div class="number-and-price">
                         <p class="top-nr">TOP 25</p>
                         <p class="price">350kr.</p>
                     </div>
                 </section>
+                <!-- Samme struktur for alle produkterne slutter her, og gentaget i de følgende sektioner -->
 
                 <section class="product-and-info">
                     <h3>2001 AMA</h3>
@@ -173,6 +186,7 @@
                 </section>
             </div>
 
+            <!-- Dette er en ikon serie der kommer i bunden af side før SoMe ikonerne -->
             <section id="icon-series">
                 <div class="icon-and-text">
                     <img src="images/Truck.svg" alt="Truck icon" />
