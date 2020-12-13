@@ -1,13 +1,16 @@
 /**
- * file: shop.js
+ * file: gallery.js
  * purpose: interactivity
  **/
-console.log("JavaScript from js/js.js: up and running!");
+console.log("JavaScript from js/gallery.js: up and running!");
 
 // Tjek at DOM er indlæst
 $(document).ready(function () {
 
-    // ... your code here ...
+    // ... Kode start ...
+    /*Dette event skal være på alle billederne.
+    Når man trækker musen hen over et billede, vil tekst en boks der er gemt bag billedet komme frem, og billede og tekstboksen vil blive forstørret en smule.
+    Når man trækker musen væk vil billede og tekstboksen blive sat tilbage til udgangspunktet*/
     $(".position-relative").mouseover(function () {
         $(this).children(".pop-up-text").css("z-index", "5");
         $(this).css("transform", "scale(1.1)")
@@ -17,13 +20,13 @@ $(document).ready(function () {
         $(this).css("transform", "scale(1)");
     });
     
-    /* Midlertidig billede effekt, indtil tekst er tilføjet for fremtiden */
-    $(".hover-effect").children("img").mouseover(function () {
+    /*Midlertidig billede effekt, indtil tekst er tilføjet på alle billederne*/
+    $(".hover-effect").children("picture").children("img").mouseover(function () {
         $(this).css("transform", "scale(1.1)");
     });
-    $(".hover-effect").children("img").mouseout(function () {
+    $(".hover-effect").children("picture").children("img").mouseout(function () {
         $(this).css("transform", "scale(1)");
     });
-    // ... end ...
+    // ... Kode slut ...
 
 });

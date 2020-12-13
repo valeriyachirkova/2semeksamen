@@ -24,7 +24,11 @@
     <header class="header">
         <div id="top-menu">
             <a id="logo" href="index.html">
-                <img src="images/logosilver.webp" alt="logo" />
+                <picture>
+                    <source srcset="images/logosilver.webp" type="image/webp">
+                    <source srcset="images/logosilver.png" type="image/png">
+                    <img src="images/logosilver.png" alt="Lollitop">
+                </picture>
             </a>
 
             <!--Burger ikon der vil skifte til et kryds og tilbage igen, via JavaScript, når man klikker på det-->
@@ -76,33 +80,65 @@
             <h1>GALLERY</h1>
 
             <section>
-                <h2>TAKE A LOOK AT OUR GALLERY
-                </h2>
+                <h2>TAKE A LOOK AT OUR GALLERY</h2>
 
-                <div class="row">   <!-- her er rækker med kolonner -->
+                <!-- her er rækker med kolonner -->
+                <div class="row">
+
                     <div class="column">
-                        <div class="hover-effect"> <!-- her kommer tekst over billedet, når musen er på billedet -->
+
+                        <!-- her kommer tekst over billedet, når musen er på billedet -->
+                        <div class="hover-effect">
                             <div class="position-relative">
                                 <p class="pop-up-text">TOP NR. 2</p>
-                                <img src="images/g1.webp" alt="galleryphoto"> <!-- dette er et billede -->
+
+                                <!-- dette er et billede -->
+                                <picture>
+                                    <source srcset="images/g1.webp" type="image/webp">
+                                    <source srcset="images/g1.jpg" type="image/jpeg">
+                                    <img src="images/g1.jpg" alt="top 2 with discoball">
+                                </picture>
                             </div>
                         </div>
-                        <img src="images/gifs/3lolli.gif" alt="galleryphoto"> <!-- dette er en gif -->
+
+                        <!-- dette er en gif -->
+                        <img src="images/gifs/3lolli.gif" alt="galleryphoto">
+
                         <div class="hover-effect">
                             <div class="position-relative">
                                 <p class="pop-up-text">Tag delivery 23-08-20</p>
-                                <img src="images/g25.webp" alt="galleryphoto">
+                                <picture>
+                                    <source srcset="images/g25.webp" type="image/webp">
+                                    <source srcset="images/g25.jpg" type="image/jpeg">
+                                    <img src="images/g25.jpg" alt="Tag delivery">
+                                </picture>
                             </div>
                             <div class="position-relative">
                                 <p class="pop-up-text">Photoshoot 27-11-20</p>
-                                <img src="images/g4.webp" alt="galleryphoto">
+                                <picture>
+                                    <source srcset="images/g4.webp" type="image/webp">
+                                    <source srcset="images/g4.jpg" type="image/jpeg">
+                                    <img src="images/g4.jpg" alt="Girl and boy on couch in Lollitops">
+                                </picture>
                             </div>
-                            <img src="images/g5.webp" alt="galleryphoto">
-                            <img src="images/g20.webp" alt="galleryphoto">
+                            <picture>
+                                <source srcset="images/g5.webp" type="image/webp">
+                                <source srcset="images/g5.jpg" type="image/jpeg">
+                                <img src="images/g5.jpg" alt="galleryphoto">
+                            </picture>
+                            <picture>
+                                <source srcset="images/g20.webp" type="image/webp">
+                                <source srcset="images/g20.jpg" type="image/jpeg">
+                                <img src="images/g20.jpg" alt="galleryphoto">
+                            </picture>
                         </div>
                         <img src="images/gifs/heart2.gif" alt="galleryphoto">
                         <div class="hover-effect">
-                            <img src="images/g7.webp" alt="galleryphoto">
+                            <picture>
+                                <source srcset="images/g7.webp" type="image/webp">
+                                <source srcset="images/g7.jpg" type="image/jpeg">
+                                <img src="images/g7.jpg" alt="galleryphoto">
+                            </picture>
                         </div>
                     </div>
 
@@ -110,17 +146,45 @@
                         <div class="hover-effect">
                             <div class="position-relative">
                                 <p class="pop-up-text">Photoshoot 27-11-20</p>
-                                <img src="images/g10.webp" alt="galleryphoto">
+                                <picture>
+                                    <source srcset="images/g10.webp" type="image/webp">
+                                    <source srcset="images/g10.jpg" type="image/jpeg">
+                                    <img src="images/g10.jpg" alt="Gril in Lollitop with disco ligths and a ballon">
+                                </picture>
                             </div>
-                            <img src="images/g13.webp" alt="galleryphoto">
-                            <img src="images/g12.webp" alt="galleryphoto">
-                            <img src="images/g14.webp" alt="galleryphoto">
-                            <img src="images/g16.webp" alt="galleryphoto">
+                            <picture>
+                                <source srcset="images/g13.webp" type="image/webp">
+                                <source srcset="images/g13.jpg" type="image/jpeg">
+                                <img src="images/g13.jpg" alt="galleryphoto">
+                            </picture>
+                            <picture class="hover-effect">
+                                <source srcset="images/g12.webp" type="image/webp">
+                                <source srcset="images/g12.jpg" type="image/jpeg">
+                                <img src="images/g12.jpg" alt="galleryphoto">
+                            </picture>
+                            <picture>
+                                <source srcset="images/g14.webp" type="image/webp">
+                                <source srcset="images/g14.jpg" type="image/jpeg">
+                                <img src="images/g14.jpg" alt="galleryphoto">
+                            </picture>
+                            <picture>
+                                <source srcset="images/g16.webp" type="image/webp">
+                                <source srcset="images/g16.jpg" type="image/jpeg">
+                                <img src="images/g16.jpg" alt="galleryphoto">
+                            </picture>
                         </div>
                         <img src="images/gifs/xoxololli.gif" alt="galleryphoto">
                         <div class="hover-effect">
-                            <img src="images/g24.webp" alt="galleryphoto">
-                            <img src="images/g2.webp" alt="galleryphoto">
+                            <picture>
+                                <source srcset="images/g24.webp" type="image/webp">
+                                <source srcset="images/g24.png" type="image/png">
+                                <img src="images/g24.png" alt="galleryphoto">
+                            </picture>
+                            <picture>
+                                <source srcset="images/g2.webp" type="image/webp">
+                                <source srcset="images/g2.jpg" type="image/jpeg">
+                                <img src="images/g2.jpg" alt="galleryphoto">
+                            </picture>
                         </div>
                     </div>
 
@@ -129,28 +193,80 @@
                         <div class="hover-effect">
                             <div class="position-relative">
                                 <p class="pop-up-text">Kaaliyah music video project</p>
-                                <img src="images/g17.webp" alt="galleryphoto">
+                                <picture>
+                                    <source srcset="images/g17.webp" type="image/webp">
+                                    <source srcset="images/g17.jpg" type="image/jpeg">
+                                    <img src="images/g17.jpg" alt="Kaaliyah in a Lollitop in her music video">
+                                </picture>
                             </div>
-                            <img src="images/g18.webp" alt="galleryphoto">
-                            <img src="images/g21.webp" alt="galleryphoto">
-                            <img src="images/g19.webp" alt="galleryphoto">
-                            <img src="images/g23.webp" alt="galleryphoto">
-                            <img src="images/g6.webp" alt="galleryphoto">
+                            <picture>
+                                <source srcset="images/g18.webp" type="image/webp">
+                                <source srcset="images/g18.png" type="image/png">
+                                <img src="images/g18.png" alt="galleryphoto">
+                            </picture>
+                            <picture>
+                                <source srcset="images/g21.webp" type="image/webp">
+                                <source srcset="images/g21.jpg" type="image/jpeg">
+                                <img src="images/g21.jpg" alt="galleryphoto">
+                            </picture>
+                            <picture>
+                                <source srcset="images/g19.webp" type="image/webp">
+                                <source srcset="images/g19.jpg" type="image/jpeg">
+                                <img src="images/g19.jpg" alt="galleryphoto">
+                            </picture>
+                            <picture>
+                                <source srcset="images/g23.webp" type="image/webp">
+                                <source srcset="images/g23.jpg" type="image/jpeg">
+                                <img src="images/g23.jpg" alt="galleryphoto">
+                            </picture>
+                            <picture>
+                                <source srcset="images/g6.webp" type="image/webp">
+                                <source srcset="images/g6.jpg" type="image/jpeg">
+                                <img src="images/g6.jpg" alt="galleryphoto">
+                            </picture>
                         </div>
                     </div>
 
                     <div class="column">
                         <div class="hover-effect">
-                            <img src="images/g3.webp" alt="galleryphoto">
-                            <img src="images/g26.webp" alt="galleryphoto">
-                            <img src="images/g9.webp" alt="galleryphoto">
+                            <picture>
+                                <source srcset="images/g3.webp" type="image/webp">
+                                <source srcset="images/g3.jpg" type="image/jpeg">
+                                <img src="images/g3.jpg" alt="galleryphoto">
+                            </picture>
+                            <picture>
+                                <source srcset="images/g26.webp" type="image/webp">
+                                <source srcset="images/g26.jpg" type="image/jpeg">
+                                <img src="images/g26.jpg" alt="galleryphoto">
+                            </picture>
+                            <picture>
+                                <source srcset="images/g9.webp" type="image/webp">
+                                <source srcset="images/g9.jpg" type="image/jpeg">
+                                <img src="images/g9.jpg" alt="galleryphoto">
+                            </picture>
                         </div>
                         <img src="images/gifs/heart1.gif" alt="galleryphoto">
                         <div class="hover-effect">
-                            <img src="images/g11.webp" alt="galleryphoto">
-                            <img src="images/g22.webp" alt="galleryphoto">
-                            <img src="images/g8.webp" alt="galleryphoto">
-                            <img src="images/g15.webp" alt="galleryphoto">
+                            <picture>
+                                <source srcset="images/g11.webp" type="image/webp">
+                                <source srcset="images/g11.png" type="image/png">
+                                <img src="images/g11.png" alt="galleryphoto">
+                            </picture>
+                            <picture>
+                                <source srcset="images/g22.webp" type="image/webp">
+                                <source srcset="images/g22.png" type="image/png">
+                                <img src="images/g22.png" alt="galleryphoto">
+                            </picture>
+                            <picture>
+                                <source srcset="images/g8.webp" type="image/webp">
+                                <source srcset="images/g8.jpg" type="image/jpeg">
+                                <img src="images/g8.jpg" alt="galleryphoto">
+                            </picture>
+                            <picture>
+                                <source srcset="images/g15.webp" type="image/webp">
+                                <source srcset="images/g15.jpg" type="image/jpeg">
+                                <img src="images/g15.jpg" alt="galleryphoto">
+                            </picture>
                         </div>
                     </div>
                 </div>

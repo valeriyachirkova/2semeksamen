@@ -24,7 +24,11 @@
     <header class="header">
         <div id="top-menu">
             <a id="logo" href="index.html">
-                <img src="images/logosilver.webp" alt="logo" />
+                <picture>
+                    <source srcset="images/logosilver.webp" type="image/webp">
+                    <source srcset="images/logosilver.png" type="image/png">
+                    <img src="images/logosilver.png" alt="Lollitop">
+                </picture>
             </a>
 
             <!--Burger ikon der vil skifte til et kryds og tilbage igen, via JavaScript, når man klikker på det-->
@@ -76,13 +80,21 @@
             <!--Article her indeholder en section med flexcontainer, der flexer de 2 billeder horisontalt.-->
             <h1>ABOUT</h1>
             <h2>U WANT TO KNOW MORE ABOUT US?</h2>
-            
+
             <!--section med billeder, som flexer-->
             <section id="flex-container">
-                <img id="picture_1" src="images/aboutbillede.webp" alt="about" />
-                <img id="picture_2" src="images/8200.webp" alt="8200" />
+                <picture id="picture_1">
+                    <source srcset="images/aboutbillede.webp" type="image/webp">
+                    <source srcset="images/aboutbillede.png" type="image/png">
+                    <img src="images/aboutbillede.png" alt="Lollitop logo on mirror">
+                </picture>
+                <picture id="picture_2">
+                    <source srcset="images/8200.webp" type="image/webp">
+                    <source srcset="images/8200.jpg" type="image/jpeg">
+                    <img src="images/8200.jpg" alt="Photoshoot on a crane">
+                </picture>
             </section>
-            
+
             <!--Introduktions tekst -->
             <section id="text">
                 <p id="text_1">
@@ -92,12 +104,12 @@
                     Every piece of clothing is upcycled and unique. That means ur next
                     night out will unique and more environmentally sustainable cuz when
                     you buy a lolli top you'll be the only one with that top. You'll
-                    shine like a disco ball. 
+                    shine like a disco ball.
                 </p>
                 <!-- paragraph med kontakt informationer -->
                 <p id="text_2">
-                    CELL PHONE 22929426 
-                   <br>E-MAIL email @ info@lollitop.com
+                    CELL PHONE 22929426
+                    <br>E-MAIL email @ info@lollitop.com
                 </p>
                 <br><br>
                 <!--paragrapgh udtrykker de gerne samarbejder -->
@@ -113,10 +125,14 @@
         <div class="footer-social-icons">
             <ul>
                 <li>
-                    <a href="https://www.instagram.com/lollitop8000/"><img src="images/pinkinsta.png" alt="Instagram" /></a>
+                    <a href="https://www.instagram.com/lollitop8000/">
+                        <img src="images/pinkinsta.png" alt="Instagram" />
+                    </a>
                 </li>
                 <li>
-                    <a href="https://www.facebook.com/Lollitop8000-103294858154757"><img src="images/pinkfb.png" alt="Facebook" /></a>
+                    <a href="https://www.facebook.com/Lollitop8000-103294858154757">
+                        <img src="images/pinkfb.png" alt="Facebook" />
+                    </a>
                 </li>
             </ul>
         </div>

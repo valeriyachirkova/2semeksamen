@@ -1,3 +1,5 @@
+
+/*Styling af produkt navn*/
 h3 {
     font-size: 1.2em;
     color: lightgrey;
@@ -9,11 +11,14 @@ h3 {
     margin-bottom: 0;
 }
 
+/*Styling af tv-ramme pg billeder start*/
+/* Her sætter jeg containerne rundt om billederne til "position: relative", så billederne bliver placeret relativt til deres parent contianer*/
 #product_showcase {
     position: relative;
     text-align: center;
 }
 
+/* Her sætter jeg billedere til "position: absolut", så de bliver ignoret af strukturen. Så placere jeg dem så de er centreret i TV-rammen*/
 #pic_change img {
     width: 80%;
     position: absolute;
@@ -22,11 +27,14 @@ h3 {
     top: 5%;
 }
 
-#tv_frame {
+#tv_frame img {
     width: 90%;
     position: relative;
 }
+/*Styling af tv-ramme pg billeder end*/
 
+/*Styling af knapper start*/
+/*Knapperne bliver flexet ved siden af hinanden*/
 #choose_pic {
     display: flex;
     width: 80%;
@@ -34,6 +42,7 @@ h3 {
     justify-content: center;
 }
 
+/*Styler knapperne så de ligner knapper*/
 #choose_pic p {
     padding: 3px;
     margin: auto 8px;
@@ -46,18 +55,24 @@ h3 {
     font-size: 0.8em;
 }
 
+/*Laver en effekt når man trækker musen ind hover knapperne*/
 #choose_pic p:hover {
     cursor: pointer;
     background-color: #ff77cf;
 }
 
+/*Styler knapperne når man klikker på dem.
+.active class bliver brugt til at beholde klikke stylingen, så man kan se hvilken knap man har klikket på.
+.active class bliver sat på den rigtige knap via JavaScript*/
 #choose_pic .active,
 #choose_pic p:active {
     transform: translate(4px, 4px);
     box-shadow: none;
     background-color: #ff77cf;
 }
+/*Styling af knapper end*/
 
+/*Styling af alt info om produktet start*/
 #product_info {
     width: 80%;
     margin: 4% auto 0;
@@ -105,7 +120,9 @@ h3 {
     box-shadow: none;
     background-color: #ff77cf;
 }
+/*Styling af alt info om produktet end*/
 
+/* Styling af ikon serie start*/
 #icon-series {
     margin: 2em 0 1em;
   display: flex;
@@ -128,10 +145,10 @@ h3 {
 .icon-and-text p {
   font-size: 0.7em;
 }
+/* Styling af ikon serie end*/
 
 
-
-
+/*Laver ændringer på stylingen alt efter skærmstørrelse, herfra til slut*/
 @media only screen and (min-width: 500px) {
     #price {
         font-size: 1.5em;

@@ -7,7 +7,7 @@ console.log("JavaScript from js/js.js: up and running!");
 // Tjek at DOM er indlæst
 $(document).ready(function () {
 
-    // ... your code here ...
+    // ... Kode start ...
     //Laver en boolean for at tjekke om dropdown menuen er aktiv
     var isActive = false;
     
@@ -59,6 +59,6 @@ $(document).ready(function () {
             target[index].style.transform = 'translate3d(0px, ' + pos + 'px, 0px)';
         }
     });
-    // ... end ...
+    // ... Kode slut ...
 
 });

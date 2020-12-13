@@ -21,50 +21,93 @@
     <!--Parallax bobler - sættes øverst fordi boblerne skal svæve over alle elementer i HTML dokumentet, når de får position: absolut-->
     <section>
         <div id="bobble1" class="bobble" data-rate="-0.5">
-            <img src="images/bobble1.webp" alt="bobble1">
+            <picture>
+                <source srcset="images/bobble1.webp" type="image/webp">
+                <source srcset="images/bobble1.png" type="image/png">
+                <img src="images/bobble1.png" alt="">
+            </picture>
         </div>
 
         <div id="bobble2" class="bobble" data-rate="-2">
-            <img src="images/bobble_4.webp" alt="bobble2">
+            <picture>
+                <source srcset="images/bobble_4.webp" type="image/webp">
+                <source srcset="images/bobble_4.png" type="image/png">
+                <img src="images/bobble_4.png" alt="">
+            </picture>
         </div>
 
         <div id="bobble3" class="bobble" data-rate="-1">
-              <img src="images/bobble_4.webp" alt="bobble3">
+            <picture>
+                <source srcset="images/bobble_4.webp" type="image/webp">
+                <source srcset="images/bobble_4.png" type="image/png">
+                <img src="images/bobble_4.png" alt="">
+            </picture>
         </div>
 
         <div id="bobble4" class="bobble" data-rate="-1">
-             <img src="images/bobble1.webp" alt="bobble4">
+            <picture>
+                <source srcset="images/bobble1.webp" type="image/webp">
+                <source srcset="images/bobble1.png" type="image/png">
+                <img src="images/bobble1.png" alt="">
+            </picture>
         </div>
 
         <div id="bobble5" class="bobble" data-rate="-1">
-              <img src="images/bobble_4.webp" alt="bobble5">
+            <picture>
+                <source srcset="images/bobble_4.webp" type="image/webp">
+                <source srcset="images/bobble_4.png" type="image/png">
+                <img src="images/bobble_4.png" alt="">
+            </picture>
         </div>
 
         <div id="bobble6" class="bobble" data-rate="-1">
-             <img src="images/bobble1.webp" alt="bobble6">
+            <picture>
+                <source srcset="images/bobble1.webp" type="image/webp">
+                <source srcset="images/bobble1.png" type="image/png">
+                <img src="images/bobble1.png" alt="">
+            </picture>
         </div>
 
         <div id="bobble7" class="bobble" data-rate="-3">
-               <img src="images/bobble_4.webp" alt="bobble7">
+            <picture>
+                <source srcset="images/bobble_4.webp" type="image/webp">
+                <source srcset="images/bobble_4.png" type="image/png">
+                <img src="images/bobble_4.png" alt="">
+            </picture>
         </div>
 
         <div id="bobble8" class="bobble" data-rate="-1">
-           <img src="images/bobble1.webp" alt="bobble8">
+            <picture>
+                <source srcset="images/bobble1.webp" type="image/webp">
+                <source srcset="images/bobble1.png" type="image/png">
+                <img src="images/bobble1.png" alt="">
+            </picture>
         </div>
 
         <div id="bobble9" class="bobble" data-rate="-3">
-              <img src="images/bobble_4.webp" alt="bobble9">
+            <picture>
+                <source srcset="images/bobble_4.webp" type="image/webp">
+                <source srcset="images/bobble_4.png" type="image/png">
+                <img src="images/bobble_4.png" alt="">
+            </picture>
         </div>
 
         <div id="bobble10" class="bobble" data-rate="-1">
-             <img src="images/bobble1.webp" alt="bobble10">
+            <picture>
+                <source srcset="images/bobble1.webp" type="image/webp">
+                <source srcset="images/bobble1.png" type="image/png">
+                <img src="images/bobble1.png" alt="">
+            </picture>
         </div>
 
         <div id="bobble11" class="bobble" data-rate="-3">
-              <img src="images/bobble_4.webp" alt="bobble11">
+            <picture>
+                <source srcset="images/bobble_4.webp" type="image/webp">
+                <source srcset="images/bobble_4.png" type="image/png">
+                <img src="images/bobble_4.png" alt="">
+            </picture>
         </div>
     </section>
-
 
     <!--Pop-up vindue som indeholder infotekst, video samt CTA-->
     <div id="black-box">
@@ -75,23 +118,32 @@
                 <source src="video/video-black-box.MP4" type="video/mp4" />
             </video>
             <img src="images/play_button.svg" alt="Play button" id="play-button">
-            <img src="images/tv.webp" alt="">
+            <picture>
+                <source srcset="images/tv.webp" type="image/webp">
+                <source srcset="images/tv.png" type="image/png">
+                <img src="images/tv.png" alt="">
+            </picture>
         </div>
-        <p id="start-button">START UR JOURNEY</p><!--CTA-->
+        <p id="start-button">START UR JOURNEY</p>
+        <!--CTA-->
     </div>
 
     <!--header med logo og navigation-->
     <header class="header">
         <div id="top-menu">
             <a id="logo" href="index.html">
-                <img src="images/logosilver.webp" alt="logo" />
+                <picture>
+                    <source srcset="images/logosilver.webp" type="image/webp">
+                    <source srcset="images/logosilver.png" type="image/png">
+                    <img src="images/logosilver.png" alt="Lollitop">
+                </picture>
             </a>
-            
+
             <!--Burger ikon der vil skifte til et kryds og tilbage igen, via JavaScript, når man klikker på det-->
             <div id="burger-icon">
                 <img src="images/burger-icon.svg" alt="Menu icon" />
             </div>
-            
+
             <!--desktop navigation-->
             <ul id="desktop-menu">
                 <li>
@@ -159,7 +211,11 @@
                     <div class="img_product">
                         <p class="title">TOP 44 - 2001 AMA</p>
                         <p class="see-more-text">SEE MORE</p>
-                        <img src="images/2.1.webp" alt="product2">
+                        <picture>
+                            <source srcset="images/2.1.webp" type="image/webp">
+                            <source srcset="images/2.1.jpg" type="image/jpeg">
+                            <img src="images/2.1.jpg" alt="top 44 2001 AMA">
+                        </picture>
                     </div>
                 </a>
 
@@ -168,34 +224,39 @@
                     <div class="img_product">
                         <p class="title">TOP 25 - ZUKUNFT</p>
                         <p class="see-more-text">SEE MORE</p>
-                        <img src="images/1.1.webp" alt="product1">
+                        <picture>
+                            <source srcset="images/1.1.webp" type="image/webp">
+                            <source srcset="images/1.1.jpg" type="image/jpeg">
+                            <img src="images/1.1.jpg" alt="top 25 Zukunft">
+                        </picture>
                     </div>
                 </a>
-
 
                 <!--produkt 3-->
                 <a href="product3.html">
                     <div class="img_product">
                         <p class="title">TOP 34 - TIE ME UP</p>
                         <p class="see-more-text">SEE MORE</p>
-                        <img src="images/3.1.webp" alt="product3">
+                        <picture>
+                            <source srcset="images/3.1.webp" type="image/webp">
+                            <source srcset="images/3.1.jpg" type="image/jpeg">
+                            <img src="images/3.1.jpg" alt="top 34 Tie Me Up">
+                        </picture>
                     </div>
                 </a>
             </section>
 
-
-           <!--section 4 - instragram feed - API fra Elfsight--> 
+            <!--section 4 - instragram feed - API fra Elfsight-->
             <section id="instafeed">
                 <p id="title_ig">LOLLITOP INSTAGRAM</p>
                 <script src="https://apps.elfsight.com/p/platform.js" defer></script>
                 <div class="elfsight-app-e005cd8d-1835-4880-b8fd-cc38fead97f5"></div>
             </section>
 
-
         </article>
     </main>
 
-   <!--footer med SoMe-ikoner + links til Instagram og Facebook--> 
+    <!--footer med SoMe-ikoner + links til Instagram og Facebook-->
     <footer>
         <div class="footer-social-icons">
             <ul>
@@ -209,10 +270,10 @@
         </div>
     </footer>
 
-   <!--jQuery API implementeres-->
+    <!--jQuery API implementeres-->
     <script src="js/jquery-3.5.1.min.js"></script>
 
-   <!--links til javascript filer - js.js er fælles javascript - index.js er intern javascript for denne side-->
+    <!--links til javascript filer - js.js er fælles javascript - index.js er intern javascript for denne side-->
     <script src="js/js.js"></script>
     <script src="js/index.js"></script>
 </body>

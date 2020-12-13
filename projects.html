@@ -20,19 +20,23 @@
 </head>
 
 <body>
- 
-        <!--header med logo og navigation-->
+
+    <!--header med logo og navigation-->
     <header class="header">
         <div id="top-menu">
             <a id="logo" href="index.html">
-                <img src="images/logosilver.webp" alt="logo" />
+                <picture>
+                    <source srcset="images/logosilver.webp" type="image/webp">
+                    <source srcset="images/logosilver.png" type="image/png">
+                    <img src="images/logosilver.png" alt="Lollitop">
+                </picture>
             </a>
-            
+
             <!--Burger ikon der vil skifte til et kryds og tilbage igen, via JavaScript, når man klikker på det-->
             <div id="burger-icon">
                 <img src="images/burger-icon.svg" alt="Menu icon" />
             </div>
-            
+
             <!--desktop navigation-->
             <ul id="desktop-menu">
                 <li>
@@ -85,7 +89,11 @@
                     <source src="video/Kaaliyah.mp4" type="video/mp4" />
                 </video>
                 <img src="images/play_button.svg" alt="Play button" id="play-button" />
-                <img id="tv-ramme" src="images/tv.webp" alt="television frame" />
+                <picture id="tv_frame">
+                    <source srcset="images/tv.webp" type="image/webp">
+                    <source srcset="images/tv.png" type="image/png">
+                    <img src="images/tv.png" alt="">
+                </picture>
             </section>
             <!-- section med video slut -->
 
@@ -95,11 +103,23 @@
             </p>
             <!-- section med behind the scenes fotos start -->
             <section id="media2">
-                <img class="photos" src="images/1.webp" alt="" />
+                <picture class="photos">
+                    <source srcset="images/1.webp" type="image/webp">
+                    <source srcset="images/1.png" type="image/png">
+                    <img src="images/1.png" alt="">
+                </picture>
 
-                <img class="photos" src="images/2.webp" alt="" />
+                <picture class="photos">
+                    <source srcset="images/2.webp" type="image/webp">
+                    <source srcset="images/2.png" type="image/png">
+                    <img src="images/2.png" alt="">
+                </picture>
 
-                <img class="photos" src="images/3.webp" alt="" />
+                <picture class="photos">
+                    <source srcset="images/3.webp" type="image/webp">
+                    <source srcset="images/3.png" type="image/png">
+                    <img src="images/3.png" alt="">
+                </picture>
             </section>
             <!-- section med behind the scenes fotos slut -->
         </article>

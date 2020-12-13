@@ -24,7 +24,11 @@
     <header class="header">
         <div id="top-menu">
             <a id="logo" href="index.html">
-                <img src="images/logosilver.webp" alt="logo" />
+                <picture>
+                    <source srcset="images/logosilver.webp" type="image/webp">
+                    <source srcset="images/logosilver.png" type="image/png">
+                    <img src="images/logosilver.png" alt="Lollitop">
+                </picture>
             </a>
 
             <!--Burger ikon der vil skifte til et kryds og tilbage igen, via JavaScript, når man klikker på det-->
@@ -77,17 +81,40 @@
             <h1>U WANT TOP NR 44?</h1>
 
             <section id="product">
+               
                 <!-- Her har jeg en div for at isolere showcase af produktet, så jeg bedre kan rygge rundt på det-->
                 <div>
                     <h3>2001 AMA</h3>
                     <div id="product_showcase">
+                       
+                        <!-- Her bliver alle tre billeder med forskellige vinkler loaded ind samtidig, så det går flydende, når man vælger mellem billederne via JavaScript -->
                         <div id="pic_change">
-                            <img src="images/2.1.webp" alt="" class="product_pic">
-                            <img src="images/2.2.webp" alt="" class="product_pic">
-                            <img src="images/2.3.webp" alt="" class="product_pic">
+                            <picture class="product_pic">
+                                <source srcset="images/2.1.webp" type="image/webp">
+                                <source srcset="images/2.1.jpg" type="image/jpeg">
+                                <img src="images/2.1.jpg" alt="Front view">
+                            </picture>
+                            <picture class="product_pic">
+                                <source srcset="images/2.2.webp" type="image/webp">
+                                <source srcset="images/2.2.jpg" type="image/jpeg">
+                                <img src="images/2.2.jpg" alt="Side view">
+                            </picture>
+                            <picture class="product_pic">
+                                <source srcset="images/2.3.webp" type="image/webp">
+                                <source srcset="images/2.3.jpg" type="image/jpeg">
+                                <img src="images/2.3.jpg" alt="Back view">
+                            </picture>
                         </div>
-                        <img src="images/tv.webp" alt="" id="tv_frame">
+                        
+                        <!-- Dette er tv rammen der kommer foran billderne. Den skal stå her i strukturen, så den flytter sig op foran billederne, når billederne bliver givet "position: absolut" -->
+                        <picture id="tv_frame">
+                            <source srcset="images/tv.webp" type="image/webp">
+                            <source srcset="images/tv.png" type="image/png">
+                            <img src="images/tv.png" alt="">
+                        </picture>
                     </div>
+                    
+                    <!-- Dette er knapperne man bruger til at skifte mellem billeder -->
                     <div id="choose_pic">
                         <p class="pic_button" id="front_pic">Front</p>
                         <p class="pic_button" id="side_pic">Side</p>
@@ -117,7 +144,8 @@
                     <p id="add_to_bag_button">ADD TO BAG</p>
                 </div>
             </section>
-
+            
+            <!-- Dette er en ikon serie der kommer i bunden af side før SoMe ikonerne -->
             <section id="icon-series">
                 <div class="icon-and-text">
                     <img src="images/Truck.svg" alt="Truck icon" />
