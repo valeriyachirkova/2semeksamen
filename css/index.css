@@ -1,8 +1,6 @@
-
-/*logo video*/
+/*logo video som bliver skjuldt på mobil*/
 #logo_play video {
-    max-width: 100%;
-    margin-bottom: 2%;
+    display: none;
 }
 
 /*introduktions pop-up*/
@@ -13,6 +11,7 @@
     position: fixed;
     z-index: 100;
     text-align: center;
+    padding-top: 2em;
 }
 
 #position-relative {
@@ -44,7 +43,7 @@
 }
 
 /*heading pop-up*/
-h3{
+h3 {
     font-size: 1.7em;
     color: #f1b3d1;
     -webkit-text-stroke: 1px #db1f99;
@@ -56,7 +55,7 @@ h3{
 }
 
 /*heading pop-up*/
-h4{
+h4 {
     font-size: 0.9em;
     color: #05d48a;
     -webkit-text-stroke: 0.5px black;
@@ -284,13 +283,6 @@ h4{
     }
 
 
-    /*logo video*/
-    #logo_play {
-        margin: 0 auto;
-        text-align: center;
-    }
-
-
     /*textintroduktion*/
     #text_section {
         margin-top: 8%;
@@ -340,15 +332,6 @@ h4{
 /*her tilføjes anden media-query*/
 @media only screen and (min-width: 700px) {
 
-
-    /*logo video*/
-    #logo_play video {
-        max-width: 700px;
-        margin-bottom: 2%;
-        border-radius: 10px;
-    }
-
-
     /*parallax bobler*/
     #bobble1 img {
         right: 120px;
@@ -386,14 +369,6 @@ h4{
 
     #bobble9 img {
         left: 400px;
-    }
-
-    /*logo video*/
-    #logo_spin {
-        margin: 0 auto;
-        text-align: center;
-        margin-top: 2%;
-        box-shadow: 5px 5px 5px;
     }
 
     /*tekst introduktion*/
@@ -447,6 +422,21 @@ h4{
 
     #black-box p {
         font-size: 1em;
+    }
+
+    /*logo video som bliver vist på desktop*/
+    
+    #logo_play {
+        text-align: center;
+    }
+    
+    #logo_play video {
+        display: block;
+        width: 60%;
+        max-width: 800px;
+        margin: 2em auto;
+        box-shadow: 5px 5px 5px;
+        border-radius: 10px;
     }
 
     #flex_product {
